@@ -1,0 +1,449 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
+
+use App\Models\Biaya;
+use App\Models\Mahasiswa;
+use App\Models\Mahasiswa_paymant;
+use App\Models\PaymantMethod;
+use App\Models\ProgramOption;
+
+class PembayaranController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $biayas = Biaya::where('status', 'Publish')->get();
+        $mahasiswa = Mahasiswa::where('user_id', Auth::user()->id)->first();
+
+        // if (!$mahasiswa) {
+        //     return redirect()->back()->with('error', 'Belum ada pembayaran untuk anda');
+        // }
+
+        $mahasiswa_paymants = Mahasiswa_paymant::where('user_id', Auth::user()->id)->get();
+
+        return view('customer.pembayaran.index', compact('biayas', 'mahasiswa', 'mahasiswa_paymants'));
+    }
+
+
+    public function paymant($id)
+    {
+        $mahasiswa = Mahasiswa_paymant::where('id', $id)->first();
+        $biaya = Biaya::where('id', $mahasiswa->biaya_id)->first();
+
+        $paymentMethods = PaymantMethod::with('paymantKategori')->get();
+
+        return view('customer.pembayaran.retry', compact('mahasiswa', 'paymentMethods', 'biaya'));
+    }
+    
+    public function invoice($id)
+    {
+        $invoice = Mahasiswa_paymant::find($id);
+        $mahasiswa = Mahasiswa::where('id', $invoice->mahasiswa_id)->with('user')->first();
+        $customer = Auth::user();
+        $biaya = Biaya::where('id', $invoice->biaya_id)->first();
+        $paymentMethod = PaymantMethod::where('methode_initial', $invoice->payment_method)->first();
+        return view('customer.pembayaran.invoice', compact('invoice', 'mahasiswa', 'biaya', 'paymentMethod', 'customer'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display for the paymant gate way.
+     */
+    public function storePaymant(Request $request)
+    {
+        $biaya = Biaya::find($request->biaya_id);
+        try {
+            $merchantCode = 'D20322';
+            $apiKey = '9b468d49ff1b8b86d9368b92dd85cd51';
+            $paymentAmount = $request->amount;
+            $paymentMethod = $request->payment_method; // VC = Credit Card
+            $merchantOrderId = time() . ''; // Unik
+
+            $productDetails = $biaya->biaya;
+            $email = Auth::user()->email;
+            $phoneNumber = Auth::user()->phone;
+            $customerVaName = Auth::user()->name;
+            $callbackUrl = env('DUITKU_CALLBACK_URL'); // Sesuaikan dengan endpoint callback
+            // $returnUrl = env('DUITKU_RETURN_URL'); // Sesuaikan dengan halaman return
+            $returnUrl = route('paymant.index');
+            $expiryPeriod = 10; // dalam menit
+            $signature = md5($merchantCode . $merchantOrderId . $paymentAmount . $apiKey);
+
+            // Detail pelanggan
+            $customerDetail = [
+                'firstName' => Auth::user()->name,
+                'lastName' => "",
+                'email' => $email,
+                'phoneNumber' => $phoneNumber,
+                'billingAddress' => [
+                    'firstName' => Auth::user()->name,
+                    'lastName' => "",
+                    'address' => "",
+                    'city' => "",
+                    'postalCode' => "",
+                    'phone' => $phoneNumber,
+                    'countryCode' => "ID"
+                ],
+                'shippingAddress' => [
+                    'firstName' => Auth::user()->name,
+                    'lastName' => "",
+                    'address' => "",
+                    'city' => "",
+                    'postalCode' => "",
+                    'phone' => $phoneNumber,
+                    'countryCode' => "ID"
+                ]
+            ];
+
+            // Detail barang
+            $itemDetails = [
+                ['name' => $biaya->biaya, 'price' => $paymentAmount, 'quantity' => 1],
+            ];
+
+            $params = [
+                'merchantCode' => $merchantCode,
+                'paymentAmount' => $paymentAmount,
+                'paymentMethod' => $paymentMethod,
+                'merchantOrderId' => $merchantOrderId,
+                'productDetails' => $productDetails,
+                'customerVaName' => $customerVaName,
+                'email' => $email,
+                'phoneNumber' => $phoneNumber,
+                'customerDetail' => $customerDetail,
+                'itemDetails' => $itemDetails,
+                'callbackUrl' => $callbackUrl,
+                'returnUrl' => $returnUrl,
+                'signature' => $signature,
+                'expiryPeriod' => $expiryPeriod
+            ];
+
+            // $mahasiswa = Mahasiswa::where('user_id', Auth::user()->id)->first();
+
+            Mahasiswa_paymant::updateOrCreate(
+                [
+                    'user_id' => Auth::user()->id,
+                    'biaya_id' => $request->biaya_id,
+                ],
+                [
+                    'transaction_id' => $transactionId ?? null,
+                    'merchant_order_id' => $merchantOrderId,
+                    'payment_method' => $paymentMethod,
+                    'amount' => $paymentAmount,
+                    'status' => 'pending',
+                ]
+            );
+
+
+
+            // Kirim permintaan ke API Duitku
+            $response = Http::withHeaders(['Content-Type' => 'application/json'])
+                ->post('https://passport.duitku.com/webapi/api/merchant/v2/inquiry', $params);
+
+            // Kirim permintaan ke API Duitku versi Sendbox
+            // $response = Http::withHeaders(['Content-Type' => 'application/json'])
+            //     ->post('https://sandbox.duitku.com/webapi/api/merchant/v2/inquiry', $params);
+
+            // Debugging Log
+            Log::info('Duitku API Request:', $params);
+            Log::info('Duitku API Response:', ['status' => $response->status(), 'body' => $response->body()]);
+
+            if ($response->successful()) {
+                $result = $response->json();
+                return redirect()->away($result['paymentUrl']); // Langsung mengarah ke URL pembayaran
+            } else {
+                return response()->json(['error' => "Server Error " . $response->status()], $response->status());
+            }
+        } catch (\Exception $e) {
+            Log::error('Duitku API Error:', ['error' => $e->getMessage()]);
+            return response()->json(['message' => 'Terjadi kesalahan', 'error' => $e->getMessage()], 500);
+        }
+    }
+
+    public function callback(Request $request)
+    {
+        try {
+            $apiKey = '9b468d49ff1b8b86d9368b92dd85cd51';
+
+            $merchantCode = $request->input('merchantCode');
+            $amount = $request->input('amount');
+            $merchantOrderId = $request->input('merchantOrderId');
+            $signature = $request->input('signature');
+            $paymentMethod = $request->input('paymentCode');
+            $resultCode = $request->input('resultCode');
+            $reference = $request->input('reference');
+            $settlementDate = $request->input('settlementDate');
+            $issuerCode = $request->input('issuerCode');
+
+            Log::info('Duitku Callback Data:', $request->all());
+
+            $params = $merchantCode . $amount . $merchantOrderId . $apiKey;
+            $calcSignature = md5($params);
+
+            if (!hash_equals($signature, $calcSignature)) {
+                Log::error('Duitku Callback: Invalid Signature');
+                return response()->json(['error' => 'Invalid signature'], 400);
+            }
+
+            $mahasiswa = Mahasiswa_paymant::where('merchant_order_id', $merchantOrderId)->first();
+
+            if (!$mahasiswa) {
+                Log::error("Duitku Callback: Payment Not Found for Order ID: {$merchantOrderId}");
+                return response()->json(['error' => 'Payment not found'], 404);
+            }
+
+            $status = ($resultCode == "00") ? "SUCCESS" : "FAILED";
+
+            $mahasiswa->update([
+                'status' => $status,
+                'payment_method' => $paymentMethod,
+            ]);
+
+            if ($status == "SUCCESS") {
+                ProgramOption::where('user_id', $mahasiswa->user_id)->update(['status' => 'Generate NIM']);
+            }
+
+            Log::info("Duitku Callback: Payment Updated for Order ID: {$merchantOrderId}");
+
+            return response()->json(['message' => 'Payment status updated'], 200);
+        } catch (\Exception $e) {
+            Log::error('Duitku Callback Error:', ['error' => $e->getMessage()]);
+            return response()->json(['error' => 'Internal Server Error', 'message' => $e->getMessage()], 500);
+        }
+    }
+
+    public function checkTransactionStatus($merchantOrderId)
+    {
+        try {
+            $merchantCode = 'D20322';
+            $apiKey = '9b468d49ff1b8b86d9368b92dd85cd51';
+
+            $signature = md5($merchantCode . $merchantOrderId . $apiKey);
+
+            $params = [
+                'merchantCode' => $merchantCode,
+                'merchantOrderId' => $merchantOrderId,
+                'signature' => $signature
+            ];
+
+            // Kirim permintaan ke API Duitku
+            $url = 'https://passport.duitku.com/webapi/api/merchant/transactionStatus';
+
+            // Kirim permintaan ke API Duitku SendBox
+            // $url = 'https://sandbox.duitku.com/webapi/api/merchant/transactionStatus';
+
+            $response = Http::withHeaders([
+                'Content-Type' => 'application/json'
+            ])->post($url, $params);
+
+            $statusCode = $response->status();
+            $mahasiswa = Mahasiswa_paymant::where('merchant_order_id', $merchantOrderId)->first();
+
+            if ($statusCode == 200) {
+                $result = $response->json();
+                Log::info('Duitku Transaction Status:', $result);
+
+                // Cari data pembayaran di database
+                $mahasiswa = Mahasiswa_paymant::where('merchant_order_id', $merchantOrderId)->first();
+
+                if ($mahasiswa) {
+                    // Jika status expired, ubah status di database
+                    if ($result['statusCode'] == "01") {
+                        $mahasiswa->update(['status' => 'EXPIRED']);
+                        Log::info("Payment expired for Order ID: {$merchantOrderId}");
+                    } elseif ($result['statusCode'] == "00") {
+                        $mahasiswa->update(['status' => 'SUCCESS']);
+                        ProgramOption::where('user_id', $mahasiswa->user_id)->update(['status' => 'Generate NIM']);
+                    } else {
+                        $mahasiswa->update(['status' => 'FAILED']);
+                    }
+                }
+
+                return view('customer.pembayaran.cek', compact('result'));
+            } else {
+                Log::error('Duitku API Error:', ['status' => $statusCode, 'response' => $response->body()]);
+                return redirect()->back()->with('error', 'Terjadi kesalahan' . $statusCode);
+            }
+        } catch (\Exception $e) {
+            Log::error('Duitku Transaction Status Error:', ['error' => $e->getMessage()]);
+            return response()->json(['error' => 'Internal Server Error', 'message' => $e->getMessage()], 500);
+        }
+    }
+
+    public function retryPayment($merchantOrderId)
+    {
+        try {
+            $mahasiswa = Mahasiswa_paymant::where('merchant_order_id', $merchantOrderId)
+                ->whereIn('status', ['FAILED', 'EXPIRED'])
+                ->first();
+
+            if (!$mahasiswa) {
+                return response()->json(['error' => 'Payment not found or cannot be retried'], 404);
+            }
+
+            $biaya = Biaya::find($mahasiswa->biaya_id);
+            if (!$biaya) {
+                return response()->json(['error' => 'Biaya path not found'], 404);
+            }
+
+            $merchantCode = 'D20322';
+            $apiKey = '9b468d49ff1b8b86d9368b92dd85cd51';
+            $amount = $mahasiswa->amount;
+            $callbackUrl = env('DUITKU_CALLBACK_URL');
+            $returnUrl = env('DUITKU_RETURN_URL');
+            $expiryPeriod = 10; // dalam menit
+
+            $signature = md5($merchantCode . $merchantOrderId . $amount . $apiKey);
+
+            // Pastikan paymentMethod tidak null
+            if (!$mahasiswa->payment_method) {
+                return response()->json(['error' => 'Payment method is missing'], 400);
+            }
+
+            $customerDetail = [
+                'firstName' => Auth::user()->name,
+                'lastName' => "",
+                'email' => Auth::user()->email,
+                'phoneNumber' => Auth::user()->phone,
+                'billingAddress' => [
+                    'firstName' => Auth::user()->name,
+                    'lastName' => "",
+                    'address' => "",
+                    'city' => "",
+                    'postalCode' => "",
+                    'phone' => Auth::user()->phone,
+                    'countryCode' => "ID"
+                ],
+                'shippingAddress' => [
+                    'firstName' => Auth::user()->name,
+                    'lastName' => "",
+                    'address' => "",
+                    'city' => "",
+                    'postalCode' => "",
+                    'phone' => Auth::user()->phone,
+                    'countryCode' => "ID"
+                ]
+            ];
+
+            $itemDetails = [
+                ['name' => $biaya->biaya, 'price' => $amount, 'quantity' => 1],
+            ];
+
+            $params = [
+                'merchantCode' => $merchantCode,
+                'paymentAmount' => $amount,
+                'paymentMethod' => $mahasiswa->payment_method,
+                'merchantOrderId' => $merchantOrderId,
+                'productDetails' => $biaya->biaya,
+                'customerVaName' => Auth::user()->name,
+                'email' => Auth::user()->email,
+                'phoneNumber' => Auth::user()->phone,
+                'customerDetail' => $customerDetail,
+                'itemDetails' => $itemDetails,
+                'callbackUrl' => $callbackUrl,
+                'returnUrl' => $returnUrl,
+                'signature' => $signature,
+                'expiryPeriod' => $expiryPeriod
+            ];
+
+            // Debugging: Simpan parameter sebelum request
+            Log::info('Duitku Request Parameters:', $params);
+
+            // Request ke Duitku
+            $url = 'https://passport.duitku.com/webapi/api/merchant/v2/inquiry';
+
+            // Request ke Sandbox
+            // $url = 'https://sandbox.duitku.com/webapi/api/merchant/createInvoice';
+
+            $response = Http::withHeaders([
+                'Content-Type' => 'application/json'
+            ])->post($url, $params);
+
+            $statusCode = $response->status();
+            $body = $response->body();
+
+            // Debugging: Simpan response dari Duitku
+            Log::error('Duitku API Response:', ['status' => $statusCode, 'body' => $body]);
+
+            if ($statusCode == 200) {
+                $result = $response->json();
+                Log::info('Duitku Retry Payment Success:', $result);
+
+                return response()->json([
+                    'message' => 'Payment retried successfully',
+                    'paymentUrl' => $result['paymentUrl']
+                ]);
+            } else {
+                return response()->json([
+                    'error' => 'Server Error ' . $statusCode,
+                    'message' => json_decode($body, true) // Konversi JSON agar lebih jelas
+                ], $statusCode);
+            }
+        } catch (\Exception $e) {
+            Log::error('Duitku Retry Payment Error:', ['error' => $e->getMessage()]);
+            return response()->json(['error' => 'Internal Server Error', 'message' => $e->getMessage()], 500);
+        }
+    }
+
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        $biaya = Biaya::find($id);
+        $paymentMethods = PaymantMethod::with('paymantKategori')->get();
+
+        if ($biaya->type == 'Tunai') {
+            return view('customer.pembayaran.show', compact('biaya', 'paymentMethods'));
+        }
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
+    }
+}

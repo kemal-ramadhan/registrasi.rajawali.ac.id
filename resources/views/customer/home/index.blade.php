@@ -1,0 +1,593 @@
+@extends('customer.template.template', ['title' => 'Menu Utama', 'menu' => 'home'])
+
+@section('content')
+    <div class="w-full bg-white rounded-2xl">
+        <div
+            class="bg-[url('/assets/images/hero.webp')] object-cover bg-cover object-center md:flex items-start h-44 justify-center rounded-t-2xl">
+        </div>
+
+        <!-- Foto Profil -->
+        <div class="flex justify-center md:justify-normal md:ml-10 -mt-12 relative" x-data="{ open: false }">
+            <div class="flex items-start">
+                <!-- Gambar Profil -->
+                <img src="{{ auth()->user()->profile ? asset('storage/' . auth()->user()->profile) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) }}"
+                    alt="Profile" class="w-28 h-28 rounded-full object-cover border-2 border-white">
+
+                <!-- Tombol Edit (Pencil) -->
+                <button @click="open = true"
+                    class="absolute bottom-0 bg-secound text-white p-2 rounded-full shadow-md hover:bg-secound">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.232 5.232l3.536 3.536M16.5 3.5a2.121 2.121 0 113 3L7 19H4v-3L16.5 3.5z" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Upload -->
+            <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+                x-transition>
+                <div class="bg-white rounded-lg p-6 w-96 shadow-lg">
+                    <form action="{{ route('profile.data.store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <h2 class="text-sm font-bold text-gray-800 text-center mb-6">Upload Foto Profil</h2>
+
+                        <!--  Added error notification for file size validation -->
+                        <!-- Error Notification -->
+                        <div id="errorNotification" class="hidden mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-red-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <p class="text-red-700 text-sm font-medium" id="errorMessage"></p>
+                            </div>
+                        </div>
+
+                        <!-- Profile Photo Preview -->
+                        <div class="flex justify-center mb-6">
+                            <div class="relative">
+                                <div id="photoPreview"
+                                    class="w-32 h-32 rounded-full bg-gray-200 border-4 border-gray-300 flex items-center justify-center overflow-hidden">
+                                    <svg class="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <!-- Edit Button -->
+                                <button
+                                    class="absolute bottom-0 right-0 bg-secound hover:bg-blue-600 text-white rounded-full p-2 shadow-lg transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Upload Area -->
+                        <div class="mb-6">
+                            <label for="photoInput" class="block text-sm font-medium text-gray-700 mb-2">
+                                Pilih Foto Profil
+                            </label>
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 transition-colors cursor-pointer"
+                                onclick="document.getElementById('photoInput').click()">
+                                <svg class="mx-auto h-12 w-12 text-gray-400 mb-4" stroke="currentColor" fill="none"
+                                    viewBox="0 0 48 48">
+                                    <path
+                                        d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <p class="text-gray-600 mb-2">
+                                    <span class="font-medium text-blue-600">Klik untuk upload</span> atau drag and drop
+                                </p>
+                                <!--  Updated file size limit text from 10MB to 2MB -->
+                                <p class="text-xs text-gray-500">PNG, JPG, GIF maksimal 2MB</p>
+                            </div>
+                            <input type="file" id="photoInput" name="profile" class="hidden" accept="image/*"
+                                onchange="previewImage(event)">
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <button @click="open = false"
+                                class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors">
+                                Batal
+                            </button>
+                            <button type="submit"
+                                class="flex-1 bg-primary hover:bg-primary-hover text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                                Simpan Foto
+                            </button>
+                        </div>
+
+                        <!-- Upload Progress (Hidden by default) -->
+                        <div id="uploadProgress" class="hidden mt-4">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="bg-secound h-2 rounded-full transition-all duration-300" style="width: 0%"
+                                    id="progressBar"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2 text-center">Mengupload foto...</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-5 bg-white flex flex-col gap-5 rounded-b-2xl">
+            <h1 class="font-sora font-semibold text-sm">Hallo {{ auth()->user()->name }}
+                #{{ auth()->user()->created_at->format('Ymd') }}{{ auth()->user()->id }}</h1>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-3 items-start">
+                <div class="flex flex-col gap-2">
+                    <span>Nomber Induk Mahasiswa (NIM)</span>
+                    <span class="font-semibold">{{ $mahasiswa->nim ?? 'Belum Mendapat NIM' }}</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span>Program Studi</span>
+                    <span class="font-semibold">
+                        @if ($programOptions && count($programOptions) > 0)
+                            {{ $mahasiswa->departement->name ?? ($programOptions[0]->departement_name ?? 'Belum Memilih') }}
+                        @else
+                            Belum Memilih
+                        @endif
+                    </span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span>Nama Lengkap</span>
+                    <span class="font-semibold">{{ auth()->user()->name }}</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span>Email</span>
+                    <span class="font-semibold">{{ auth()->user()->email }}</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span>Phone</span>
+                    <span class="font-semibold">{{ auth()->user()->phone }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-5 items-start mb-20 md:mb-0">
+        <div class="grid grid-cols-1 gap-5">
+            <div
+                class="relative bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl p-6 flex flex-wrap md:flex-nowrap items-center justify-center gap-6 shadow-md hover:shadow-lg transition duration-300 ease-in-out border border-indigo-100">
+
+                @if (count($missingData))
+                    <img src="{{ asset('assets/icons/mascot.png') }}" alt="mascot"
+                        class="w-32 drop-shadow-md animate-bounce-slow">
+                    <div class="flex flex-col">
+                        <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                            👋 Halo Sobat UBTH!
+                        </h2>
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Yuk isi <span class="font-semibold text-indigo-600">Biodata Kamu</span>
+                            , mulai perjalanan akademikmu bersama
+                            <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🎓
+                        </p>
+                    </div>
+                @else
+                    @if ($programOptions && count($programOptions) > 0)
+                        @if ($programOptions[0]->status == 'Pembayaran')
+                            <img src="{{ asset('assets/icons/mascot-paymant-pandding.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2"> 📄 Yuk, Segera Bayar Formulir
+                                    Pendaftaran </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed"> Langkah awal menuju masa depan
+                                    gemilang dimulai di sini! 💫 Segera lakukan <span
+                                        class="font-semibold text-indigo-600">pembayaran formulir pendaftaran</span> agar
+                                    kamu bisa melanjutkan ke tahap berikutnya dan resmi menjadi calon mahasiswa <span
+                                        class="font-bold text-indigo-700">Universitas Bakti Tunas Husada</span>. Jangan
+                                    tunda kesempatanmu untuk bergabung dengan kampus yang penuh inspirasi dan prestasi! 🎓
+                                    Yuk, amankan kursimu sekarang juga dan wujudkan impianmu bersama <span
+                                        class="font-bold text-indigo-700">UBTH</span>! 🚀 </p>
+                            </div>
+                        @endif
+                        @if ($programOptions[0]->status == 'Verifikasi Guru BK')
+                            <img src="{{ asset('assets/icons/mascot-paymant-pandding.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2"> 📄 Yuk, Segera Hubungi Guru BK </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed"> Yu Hubungi Guru BK Untuk Verifikasi Pembayaran 🚀. Jangan
+                                    tunda kesempatanmu untuk bergabung dengan kampus yang penuh inspirasi dan prestasi! 🎓
+                                    Yuk, amankan kursimu sekarang juga dan wujudkan impianmu bersama <span
+                                        class="font-bold text-indigo-700">UBTH</span>! 🚀 </p>
+                            </div>
+                        @endif
+                        @if ($programOptions[0]->status == 'Upload Dokumen')
+                            <img src="{{ asset('assets/icons/mascot-dokumen.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col items-start">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                                    📄 Yuk, Lengkapi Dokumenmu Sekarang!
+                                </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed">
+                                    Saatnya selangkah lebih dekat menuju impianmu di
+                                    <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🎓
+                                    Unggah <span class="font-semibold text-indigo-600">dokumen persyaratan</span> kamu
+                                    dengan
+                                    lengkap dan pastikan semuanya benar agar proses pendaftaranmu berjalan lancar.
+                                    Semakin cepat kamu unggah, semakin cepat kamu bisa jadi bagian dari keluarga besar <span
+                                        class="font-bold text-indigo-700">UBTH!</span> 🚀
+                                </p>
+                                <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
+                                    class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
+                            </div>
+                            
+                        @endif
+                        @if ($programOptions[0]->status == 'Revisi Dokumen')
+                            <img src="{{ asset('assets/icons/mascot-dokumen.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                                    🔍 Ada Sedikit yang Perlu Diperbaiki Nih!
+                                </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed">
+                                    Beberapa <span class="font-semibold text-indigo-600">dokumenmu perlu direvisi</span>
+                                    agar
+                                    sesuai dengan ketentuan pendaftaran.
+                                    Yuk, segera perbarui dokumenmu supaya proses verifikasi berjalan lancar dan kamu bisa
+                                    lanjut
+                                    ke tahap berikutnya di
+                                    <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🚀
+                                </p>
+                                <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
+                                    class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
+                            </div>
+                        @endif
+                        @if ($programOptions[0]->status == 'Verifikasi Dokumen')
+                            <img src="{{ asset('assets/icons/mascot-dokumen.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                                    ⏳ Dokumenmu Sedang Dalam Proses Verifikasi
+                                </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed">
+                                    Tim administrasi kami sedang <span class="font-semibold text-indigo-600">memeriksa
+                                        kelengkapan dan keaslian dokumenmu</span>.
+                                    Mohon bersabar ya, proses ini biasanya tidak memakan waktu lama.
+                                    Tetap pantau status pendaftaranmu dan bersiaplah untuk langkah berikutnya di
+                                    <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🎓
+                                </p>
+                                <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
+                                    class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
+                            </div>
+                        @endif
+                        @if ($programOptions[0]->status == 'Proses Seleksi')
+                            <img src="{{ asset('assets/icons/mascot-seleksi.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                                    🎯 Tinggal Tahap Proses Seleksi
+                                </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed">
+                                    Semua dokumenmu sudah lengkap dan diverifikasi.
+                                    Sekarang, tinggal <span class="font-semibold text-indigo-600">proses seleksi</span>.
+                                    Silahkan masuk ke menuProses Seleksi untuk melihat daftar Seleksi yang harus di ikuti!
+                                    💪
+                                </p>
+                                <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
+                                    class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
+                            </div>
+                        @endif
+                        @if ($programOptions[0]->status == 'Daftar Ulang')
+                            <img src="{{ asset('assets/icons/mascot.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                                    🎉 Selamat! Kamu Dinyatakan Lulus Seleksi UBTH!
+                                </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed">
+                                    Perjuanganmu membuahkan hasil! 🌟
+                                    Kamu resmi <span class="font-semibold text-indigo-600">lulus tahapan seleksi</span> dan
+                                    siap melangkah ke tahap berikutnya —
+                                    <span class="font-bold text-indigo-700">daftar ulang sebagai calon mahasiswa
+                                        UBTH</span>.
+                                    Yuk, segera lengkapi prosesnya dan mulai perjalanan akademikmu bersama kami! 🚀
+                                </p>
+                                <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
+                                    class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
+                            </div>
+                        @endif
+                        @if ($programOptions[0]->status == 'Generate NIM')
+                            <img src="{{ asset('assets/icons/mascot.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                                    🥳 Selamat Datang di Keluarga UBTH!
+                                </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed">
+                                    Kamu udah resmi diterima, lho! 🎓
+                                    Sekarang tim kami sedang <span class="font-semibold text-indigo-600">menyiapkan NIM
+                                        (Nomor
+                                        Induk Mahasiswa)</span> kamu.
+                                    Tunggu sebentar ya, prosesnya sedang berjalan!
+                                    Siap-siap jadi bagian dari <span class="font-bold text-indigo-700">Universitas Bakti
+                                        Tunas
+                                        Husada</span> yang penuh semangat dan prestasi! 🚀
+                                </p>
+                                <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
+                                    class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
+                            </div>
+                        @endif
+                        @if ($programOptions[0]->status == 'Lulus')
+                            <img src="{{ asset('assets/icons/mascot.png') }}" alt="mascot"
+                                class="w-32 drop-shadow-md animate-bounce-slow">
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                                    🎉 Selamat! Kamu Resmi Menjadi Mahasiswa Universitas Bakti Tunas Husada!
+                                </h2>
+                                <p class="text-gray-700 font-medium leading-relaxed">
+                                    Perjuanganmu akhirnya membuahkan hasil! 🌟
+                                    Kini kamu telah resmi bergabung sebagai <span
+                                        class="font-semibold text-indigo-600">mahasiswa UBTH</span>.
+                                    Semoga perjalanan barumu penuh semangat, pengalaman berharga, dan prestasi gemilang.
+                                    Selamat datang di <span class="font-bold text-indigo-700">Keluarga Besar Universitas
+                                        Bakti
+                                        Tunas Husada</span>! 💙
+                                </p>
+                                <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
+                                    class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
+                            </div>
+                        @endif
+                    @else
+                        <img src="{{ asset('assets/icons/mascot-dokumen.png') }}" alt="mascot"
+                            class="w-32 drop-shadow-md animate-bounce-slow">
+                        <div class="flex flex-col">
+                            <h2 class="text-lg font-bold text-indigo-700 mb-2">
+                                📄 Kamu belum memilih satupun jalur pendaftaran
+                            </h2>
+                            <p class="text-gray-700 font-medium leading-relaxed">
+                                Saatnya selangkah lebih dekat menuju impianmu di
+                                <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🎓
+                                pilih <span class="font-semibold text-indigo-600">Program Studi</span> kamu.
+                                Semakin cepat kamu memilih, semakin cepat kamu bisa jadi bagian dari keluarga besar <span
+                                    class="font-bold text-indigo-700">UBTH!</span> 🚀
+                            </p>
+                        </div>
+                    @endif
+                @endif
+                <!-- Efek dekoratif -->
+                <div class="absolute top-0 right-0 w-16 h-16 bg-indigo-200 rounded-bl-full opacity-30"></div>
+            </div>
+
+            <!-- animasi sederhana -->
+            <style>
+                @keyframes bounce-slow {
+
+                    0%,
+                    100% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(-4px);
+                    }
+                }
+
+                .animate-bounce-slow {
+                    animation: bounce-slow 3s infinite;
+                }
+            </style>
+
+            <div class="bg-white rounded-2xl p-5">
+                <h2 class="text-sm font-semibold mb-4">Progress Data Anda</h2>
+
+                <div class="mb-4">
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-green-500 h-4 rounded-full transition-all duration-300"
+                            style="width: {{ $progressPercentage }}%"></div>
+                    </div>
+                    <p class="text-sm text-gray-700 mt-2">{{ $progressPercentage }}% data telah diisi
+                        ({{ $completedSections }}/{{ $totalSections }})</p>
+                </div>
+
+                @if (count($missingData))
+                    <div class="bg-red-50 border border-red-300 text-red-700 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2">Data yang belum diisi:</h3>
+                        <ul class="list-disc list-inside">
+                            @foreach ($missingData as $data)
+                                <li>{{ $data }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @else
+                    <div class="bg-green-50 border border-green-300 text-green-700 p-4 rounded-lg">
+                        <p>Seluruh data sudah lengkap. Terima kasih!</p>
+                    </div>
+                @endif
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 flex flex-col gap-5">
+            @forelse ($programOptions as $programOption)
+                <a href="{{ route('registration.option', ['id' => $programOption->id]) }}">
+                    <div
+                        class="relative overflow-hidden flex flex-col outline outline-1 outline-gray-200 p-5 rounded-2xl bg-primary text-white hover:bg-primary-hover hover:text-white hover:shadow-lg">
+                        <img src="{{ asset('assets/icons/outline.png') }}" alt="outline"
+                            class="w-40 absolute -top-5 -right-20">
+                        <h1 class="font-sora font-semibold text-1xl mb-3">
+                            {{ $programOption->registration_name }} -
+                            {{ $programOption->title }}
+                        </h1>
+                        <h1 class="font-sora font-semibold mb-3">
+                            {{ $programOption->departement_name }}
+                        </h1>
+                        <small class="flex flex-nowrap gap-4 items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-week w-4"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                            </svg>
+                            <span class="font-sora font-semibold">{{ $programOption->start_date }} s.d
+                                {{ $programOption->end_date }}</span>
+                        </small>
+                        <small class="flex flex-nowrap gap-4 items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-hourglass-split w-5"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+                            </svg>
+                            <span class="font-sora font-semibold">Status Pendaftaran:
+                                {{ $programOption->status }}</span>
+                        </small>
+                    </div>
+                </a>
+            @empty
+                @if (!empty($missingData))
+                    <div class="flex flex-col gap-3 items-center justify-center h-full">
+                        <img src="{{ asset('assets/icons/mascot-formulir.png') }}" alt="empty" class="w-40">
+                        <div class="text-center gap-2 flex flex-col items-center justify-center">
+                            <h1 class="font-sora font-semibold text-sm">Kamu belum Melengkapi Data Personal</h1>
+                            <small class="font-sora font-semibold">Silahkan lengkapi terlebih dahulu data
+                                kamu</small>
+                            <a href="{{ route('personal.data.index') }}"
+                                class="font-sora text-white bg-primary hover:bg-primary py-2 px-3 rounded-md text-center flex gap-2 items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person h-4"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                                </svg>
+                                Lengkapi Data
+                            </a>
+                        </div>
+                    </div>
+                @else
+                    <div class="flex flex-col gap-3 items-center justify-center h-full">
+                        <img src="{{ asset('assets/icons/mascot-serius.png') }}" alt="empty" class="w-52">
+                        <div class="text-center gap-2 flex flex-col items-center justify-center mb-5">
+                            <h1 class="font-sora font-semibold text-sm">Kamu belum memilih satupun jalur
+                                pendaftaran
+                            </h1>
+                            <small class="font-sora font-semibold">Silahkan pilih jalur dan program studi yang kamu
+                                inginkan</small>
+                        </div>
+
+                        <div class="flex items-center justify-center h-full">
+                            <a href="{{ route('registration.program') }}"
+                                class="font-sora text-white bg-primary hover:bg-primary py-2 px-3 rounded-xl text-center">+
+                                Pilih Jalur Pendaftaran</a>
+                        </div>
+                    </div>
+                @endif
+            @endforelse
+        </div>
+    </div>
+
+    <script>
+        //  Added file size validation function
+        function validateFileSize(file) {
+            const maxSize = 2 * 1024 * 1024; // 2MB in bytes
+            return file.size <= maxSize;
+        }
+
+        //  Added function to show error notification
+        function showError(message) {
+            const errorNotification = document.getElementById('errorNotification');
+            const errorMessage = document.getElementById('errorMessage');
+
+            errorMessage.textContent = message;
+            errorNotification.classList.remove('hidden');
+
+            // Auto hide after 5 seconds
+            setTimeout(() => {
+                errorNotification.classList.add('hidden');
+            }, 5000);
+        }
+
+        //  Added function to hide error notification
+        function hideError() {
+            const errorNotification = document.getElementById('errorNotification');
+            errorNotification.classList.add('hidden');
+        }
+
+        function previewImage(event) {
+            const file = event.target.files[0];
+            const preview = document.getElementById('photoPreview');
+
+            if (file) {
+                //  Added file size validation before processing
+                if (!validateFileSize(file)) {
+                    const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
+                    showError(`Ukuran file terlalu besar (${fileSizeMB}MB). Maksimal 2MB.`);
+                    // Clear the input
+                    event.target.value = '';
+                    return;
+                }
+
+                //  Hide error notification if file is valid
+                hideError();
+
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.innerHTML =
+                        `<img src="${e.target.result}" alt="Preview" class="w-full h-full object-cover rounded-full">`;
+                }
+                reader.readAsDataURL(file);
+
+                // Simulate upload progress
+                simulateUpload();
+            }
+        }
+
+        function simulateUpload() {
+            const progressContainer = document.getElementById('uploadProgress');
+            const progressBar = document.getElementById('progressBar');
+
+            progressContainer.classList.remove('hidden');
+
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        progressContainer.classList.add('hidden');
+                    }, 1000);
+                }
+                progressBar.style.width = progress + '%';
+            }, 200);
+        }
+
+        // Drag and drop functionality
+        const dropZone = document.querySelector('[onclick*="photoInput"]');
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('border-blue-400', 'bg-blue-50');
+        });
+
+        dropZone.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('border-blue-400', 'bg-blue-50');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('border-blue-400', 'bg-blue-50');
+
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                //  Added file size validation for drag and drop
+                const file = files[0];
+                if (!validateFileSize(file)) {
+                    const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
+                    showError(`Ukuran file terlalu besar (${fileSizeMB}MB). Maksimal 2MB.`);
+                    return;
+                }
+
+                document.getElementById('photoInput').files = files;
+                previewImage({
+                    target: {
+                        files: files
+                    }
+                });
+            }
+        });
+    </script>
+@endsection

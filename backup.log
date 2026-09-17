@@ -1,0 +1,90 @@
+=== Backup started: Mon Jun 15 15:02:57 UTC 2026 ===
+Sedang mengompresi file code...
+Mengupload file code ke Google Drive...
+2026/06/15 15:04:59 INFO  : Starting HTTP transaction limiter: max 3 transactions/s with burst 1
+2026/06/15 15:06:00 INFO  : 
+Transferred:   	    2.063G / 2.406 GBytes, 86%, 35.396 MBytes/s, ETA 9s
+Transferred:            0 / 1, 0%
+Elapsed time:       1m1.6s
+Transferring:
+ *               bth-code-2026-06-15_1502.tar.gz: 85% /2.406G, 36.333M/s, 9s
+
+2026/06/15 15:07:00 INFO  : 
+Transferred:   	    2.406G / 2.406 GBytes, 100%, 20.580 MBytes/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:       2m1.6s
+Transferring:
+ *               bth-code-2026-06-15_1502.tar.gz:100% /2.406G, 1.454M/s, 0s
+
+2026/06/15 15:08:00 INFO  : 
+Transferred:   	    2.406G / 4.811 GBytes, 50%, 13.709 MBytes/s, ETA 2m59s
+Transferred:            0 / 1, 0%
+Elapsed time:       3m1.6s
+Transferring:
+ *               bth-code-2026-06-15_1502.tar.gz:  0% /2.406G, 0/s, -
+
+2026/06/15 15:09:00 INFO  : 
+Transferred:   	    4.642G / 4.811 GBytes, 96%, 19.829 MBytes/s, ETA 8s
+Transferred:            0 / 1, 0%
+Elapsed time:       4m1.6s
+Transferring:
+ *               bth-code-2026-06-15_1502.tar.gz: 92% /2.406G, 43.778M/s, 3s
+
+2026/06/15 15:10:00 INFO  : 
+Transferred:   	    4.811G / 4.811 GBytes, 100%, 16.439 MBytes/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:       5m1.6s
+Transferring:
+ *               bth-code-2026-06-15_1502.tar.gz:100% /2.406G, 1.237M/s, 0s
+
+2026/06/15 15:11:00 INFO  : 
+Transferred:   	    4.811G / 7.217 GBytes, 67%, 13.697 MBytes/s, ETA 2m59s
+Transferred:            0 / 1, 0%
+Elapsed time:       6m1.6s
+Transferring:
+ *               bth-code-2026-06-15_1502.tar.gz:  0% /2.406G, 0/s, -
+
+2026/06/15 15:12:00 INFO  : 
+Transferred:   	    7.158G / 7.217 GBytes, 99%, 17.465 MBytes/s, ETA 3s
+Transferred:            0 / 1, 0%
+Elapsed time:       7m1.6s
+Transferring:
+ *               bth-code-2026-06-15_1502.tar.gz: 97% /2.406G, 41.635M/s, 1s
+
+2026/06/15 15:12:04 INFO  : bth-code-2026-06-15_1502.tar.gz: Copied (new)
+2026/06/15 15:12:04 INFO  : 
+Transferred:   	    7.217G / 7.217 GBytes, 100%, 17.465 MBytes/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:       7m5.0s
+
+Mengupload file database ke Google Drive...
+2026/06/15 15:12:04 INFO  : Starting HTTP transaction limiter: max 3 transactions/s with burst 1
+2026/06/15 15:12:04 Failed to create file system for "gdrive:Backup_Staging_PMB_UBTH/db/": couldn't find root directory ID: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+=== Backup finished: Mon Jun 15 15:12:04 UTC 2026 ===

@@ -1,0 +1,487 @@
+Tanggal                | Nama                           | Jalur Pendaftaran              | Gelombang       | Program Studi             | Nominal (Rp)    | Status    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-20 09:00:17    | AZRA DIVA KOSASIH              | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-20 09:29:00    | Wildan Kusnadiawan             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 1.000.000       | SUCCESS   
+2025-12-20 17:35:33    | Pipit pitriani                 | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-22 08:52:34    | JULIO CANDRA WIGUNA            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 1.000.000       | SUCCESS   
+2025-12-22 10:11:00    | Cipta Mauli                    | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-22 16:22:49    | sonia kurniasih                | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 1.000.000       | SUCCESS   
+2025-12-22 16:40:26    | Imanisa Zahra                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 1.000.000       | SUCCESS   
+2025-12-22 16:54:58    | Resti Azkiya Rahmati           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 1.000.000       | SUCCESS   
+2025-12-22 17:38:49    | Farahdiba Qotrunnada           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-22 18:40:35    | DIMAS MUCHAMAD IQKBAL          | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-22 19:38:51    | Sari Dhiya Ulhaqqi             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-23 11:33:55    | Heri Syaiful Bahri             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-23 11:33:56    | Rizal Husaeni                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-23 11:34:05    | Dinda Najwa Maharani           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-23 13:07:38    | Resti Azkiya Rahmati           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-24 09:30:57    | Nindya Rahmi Zihan             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-24 09:38:34    | Tanty Yulianty                 | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-24 09:50:03    | Virgine Fitriani Agustin       | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-24 12:23:18    | Imanisa Zahra                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-25 14:37:16    | Ikrimatul Choiriyah            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-25 23:12:53    | Shinta Permata Sari            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-26 08:25:51    | Wildan Kusnadiawan             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 19.750.000      | SUCCESS   
+2025-12-26 11:27:57    | sonia kurniasih                | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-26 13:09:44    | Zhulfikar Ali Butho            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-26 19:00:13    | Nandika Achmad Pratama         | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-27 19:10:05    | Muhammad Tito Firdaos          | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-29 08:00:48    | Roby Fajar Muharram            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-29 09:25:23    | Nuke Silvia Kurniawan          | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-29 09:26:19    | ina rahmadani                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-29 14:45:20    | Dadi Supriadi                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-30 09:13:03    | Puri Rahmawati                 | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-30 15:44:47    | Salwa sukma ismanita           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-30 18:02:59    | Sari Astuti                    | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-30 20:05:42    | Shara Liviany Mustika          | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-30 21:24:33    | Fadhlan Aditya Albie           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-30 21:36:45    | Bagus Sukma Gumilang           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-30 21:40:30    | Adil Cipta Mahardika           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-30 21:44:51    | Aris Muhamad Riyadi            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-30 21:45:06    | Samsul Mubarok                 | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-30 21:57:56    | Rohaeni Syabani                | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-31 05:32:47    | Sajida Al Falah                | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2025-12-31 10:35:13    | Gina Sri Rahayu                | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-31 10:52:23    | Deva Silvya Agustin            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2025-12-31 16:13:56    | Ardiansyah Nurohman            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 09:01:31    | Intan Puji Sri Rahayu          | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 09:03:06    | Dilla Astrianti Kusuma Dewi    | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 09:08:49    | Aprilia Nur Rizki              | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 09:14:43    | Dela Sukma Al Febri            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 10:29:50    | Dona fitriani                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 11:04:06    | Delia Julistiani               | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 11:04:38    | Septianis Nurjanah             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 11:04:45    | Rifalda Salma                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-01 11:04:55    | Silva Nabila Ulfa              | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 11:30:17    | Ira Maharani                   | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 15:31:01    | Dikri Wahyudi                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-01 19:20:04    | Riyad Anugrah                  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 05:38:01    | Rifqi Miftahul Awali           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 06:04:35    | Nia Juniati                    | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-02 08:01:35    | ELVINA MELIA PUTRI             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 08:20:33    | Dineu Septy Ulfiatur Rachman   | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 09:56:55    | Fitri Aulianti                 | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 10:04:54    | Friska Rosalia Suryana         | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 10:29:49    | Muhamad Muzaki Fikri Amrullah  | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 14:26:32    | Arbi Zaenul Hakim              | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 15:34:00    | Qarin Nurazmi Diningrum        | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 15:34:06    | Syipa Nurkamilah               | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 15:34:13    | Adita Diari Fanisa             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 16:49:19    | Jasmin Giovani                 | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-02 18:29:55    | Elisabetta G. Ngutra           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-02 18:31:02    | Siti Zahra Apriliani           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-03 10:03:52    | Shinta Widia Rachmat           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-03 10:03:53    | Sri Sentia Mutiarani           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-03 10:04:03    | Risella Shafa Dhiyannisa       | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-03 10:57:16    | Aura Cintari Andina            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-03 13:20:41    | FITRIANI                       | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-04 12:30:11    | Hyasinta Mulyati Hutriana Rube | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-05 09:20:43    | JULIO CANDRA WIGUNA            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-05 09:32:45    | DEDE AVISSA MAKIYATUZAHRO      | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-05 10:32:58    | Anggit Putri Pinastika         | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-05 10:36:18    | Winda Febriyanti               | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-05 11:09:43    | ERIYAN MUHAMAD NURDIANA        | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-05 12:30:34    | Greysda Rambu Lemba Eut        | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-05 14:34:17    | Rahma Pratiwi Sukma            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-05 17:20:39    | Resti kania putri              | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-06 09:55:34    | Melinda Putri Ramadhani        | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-06 09:55:37    | Priya Auliyaa Lucky            | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-06 12:20:28    | Sarah Jesika Piter             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-06 12:39:28    | Ririsiana Nata                 | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-06 13:49:54    | Nazmi Rahima                   | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-06 13:50:52    | Zaniera                        | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-06 13:54:02    | Hilma Ramadhani Fitra          | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-06 21:29:45    | Puspa Virgiantika Adzkia Putri | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-07 08:58:26    | Tuti Lutfiah Hidayah           | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-14 15:59:35    | Nabila Khairunnisa Agustin     | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-16 11:06:17    | Evan Pebriana                  | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-16 12:30:08    | Cahya Kamila                   | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-16 17:17:16    | Anita Indriani                 | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-16 19:30:02    | Dinita Nazmi Juhana            | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-17 08:27:58    | Fajar maulana muhammad         | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-17 11:55:00    | Bella Syafitri                 | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-17 12:13:03    | Herma Yulika                   | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-17 12:17:19    | PUTRI DEDE SARI                | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-17 15:03:20    | Zyad Syahir Robbani            | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-17 17:12:16    | AHMAD TANTOWI JAOHARI          | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-17 18:59:34    | Hadin Rizki Hadiatulloh        | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-18 09:41:27    | Elsha Sri Rahayu               | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-18 09:41:28    | Ananda Maolana                 | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-18 09:52:04    | Imelda Solihah                 | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-18 12:28:48    | Irfan Hidayat                  | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-18 14:29:00    | Dwi Nurul Qur'ani Romadhon     | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-18 15:18:03    | Elly Kurniawati                | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-18 16:54:02    | siti laela sari ningsih        | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-19 08:21:58    | Risca Apriany                  | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-19 08:43:48    | Muhammad Ja'far Ash-Shidiq     | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-19 08:48:56    | Nasrullah Jonika Pratama Melay | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-19 10:30:14    | Rizki adi nuraziz              | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-19 12:36:46    | Putri Patin Nabila             | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-19 12:39:27    | Pryta Trioknity                | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-19 21:18:09    | widya yana roya                | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 21.750.000      | SUCCESS   
+2026-01-19 21:48:43    | Wafa An-Azhar                  | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-20 17:14:25    | Siti Alisa Arman               | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-01-20 19:36:16    | Devi Pitara                    | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 20.750.000      | SUCCESS   
+2026-02-05 11:16:15    | Ahmad Daman Huri               | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-05 12:26:30    | Ulfi Dzakiyyah Rahmah          | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-05 13:11:54    | Sita agustini                  | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-05 13:18:06    | Jasmine Sabila ramadhani       | Gelombang 1                    | PMDK Rapor      | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-02-05 17:19:48    | M. Akil Muharom                | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-05 17:26:51    | Muhammad Lutfi Fauzan haq      | Gelombang 1                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-02-05 18:46:13    | Kayla diana maemunah           | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-05 19:47:09    | sophiea tu zahra               | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-06 07:27:09    | Dea Sintya Amelia              | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-06 08:09:45    | Maulidya Dwi Surya             | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-06 10:30:29    | MUHAMMAD RAJIB ALGHIFARI       | Gelombang 1                    | Jalur Prestasi  | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-02-06 15:36:26    | Helda nurlela                  | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-06 19:51:42    | Najma Nadhira Fauzi            | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-07 09:51:07    | REISYA ANDRIANI PUTRI          | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-07 16:46:45    | HILMAN KHOER                   | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-07 18:24:13    | Anindhya Za’farani Herdiman  | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-08 05:44:07    | Silva alya salsabila           | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-08 13:39:14    | Helen Devinka Febriani         | Gelombang 1                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-02-09 10:18:15    | DAVINNA AZALIA                 | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-09 11:31:48    | Anita Putri Permatasari        | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-09 11:51:37    | Bunga noor farohta             | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-09 16:58:59    | Aliyya Zahra Darmawan          | Gelombang 1                    | Jalur Prestasi  | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-09 19:17:59    | ABIYU FARRAS NARAYA            | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-10 12:20:25    | Yovie Octanevio                | Gelombang 1                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-02-10 13:22:46    | AKBAL MAULANA                  | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-10 14:07:52    | NELI SEPTIANI                  | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-11 06:57:54    | Arini Dwi Lestari              | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-11 17:10:43    | ALVIN FATUR RAHMAN             | Gelombang 1                    | PMDK Rapor      | S1 - Teknologi Pangan     | 1.000.000       | SUCCESS   
+2026-02-11 17:56:31    | Naila Nisrina Fajrin           | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-12 06:28:46    | Nadia Naifah Khoerunnisa       | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-12 10:29:04    | SUCI NURANDINI                 | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-12 11:25:11    | Alifia Lailan Yuha             | Gelombang 1                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-12 12:13:10    | NOVAL ARDIANSYAH               | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-12 14:47:15    | Tsani haaniyah                 | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-12 15:52:26    | syabila suci citra lestary     | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-12 17:20:04    | Muhammad Fadlan Riviansyah Alf | Gelombang 1                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-02-12 18:25:49    | Rafeyfa Fedya Hayat            | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-12 20:28:37    | AZRIEL ALVIAN ANDIANA PUTRA    | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-13 08:52:51    | SALSABILAH NUROHMAH            | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-13 08:53:05    | Rima Rahmawati                 | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 1.000.000       | SUCCESS   
+2026-02-13 15:43:19    | Farah Na'ilah Putri            | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-13 16:09:27    | Salwa Zuraida  hanum           | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-13 16:43:53    | Lusi Setiawati Widjaya         | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-13 18:12:06    | Reva saputra                   | Gelombang 1                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-02-13 18:36:26    | Marsha Ayla Yusri              | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-13 19:44:54    | Apt.Rini Apriani,S.Farm        | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-13 23:40:47    | Adi Nugraha                    | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 05:53:09    | Muhammad Ikbal Fauzi           | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 09:25:11    | Hirzy Aziz                     | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-14 09:39:27    | azmi amalia mahvash            | Gelombang 1                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-02-14 10:07:45    | Bilqisya Ghaitsaa Putri Karla  | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-14 11:15:42    | Piranti                        | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 13:11:54    | ANDRY RUSDIANA                 | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 13:37:42    | Eva Nurochvambity              | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 14:38:31    | ASEP NUGRAHA                   | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 16:30:03    | Iqlima Sarah                   | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 16:30:25    | Dede Evita Setiawati           | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 16:31:34    | HERDIYAN YOGI SUGARA           | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 18:11:41    | GAGAN GUMILAR                  | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-14 20:12:56    | HASNAA FADHIILAH GUMILAR       | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-14 20:55:45    | Alief Akbar                    | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-15 03:33:27    | AGUS RAHMAT SALAM              | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-15 07:18:34    | Desalpa Sri Rahayu             | Gelombang 1                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-15 08:39:49    | Nasywaa putri irawan           | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-15 08:40:02    | Meisya sabilla                 | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-15 10:45:21    | Joko Supriyanto                | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-15 11:15:37    | NURUL SYIFA DAYARI             | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-15 15:54:30    | Edi permana                    | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-15 19:20:49    | Abdul Aziz                     | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-15 19:32:06    | Nadya Vila Nurlaila            | Gelombang 1                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-15 20:04:01    | Hielmy Ihsan Fauzi             | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-15 20:04:11    | Widisyam Muliani               | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-16 09:37:44    | Rusdiyat                       | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-16 10:01:46    | Rima Rahmawati                 | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 1.500.000       | SUCCESS   
+2026-02-16 11:55:54    | Fahra Fauziah                  | Gelombang 1                    | Jalur Reguler / | S1 - Sistem Informasi     | 1.000.000       | SUCCESS   
+2026-02-16 13:25:41    | Elin Marlina                   | Gelombang 1                    | Jalur Reguler   | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-16 13:33:01    | Nabil Yusuf Permana            | Gelombang 1                    | PMDK Rapor      | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-02-16 19:45:31    | Sibro Amalisi                  | Gelombang 1                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-02-16 20:33:40    | thyzia putri syahla            | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-17 08:44:11    | Suciwati                       | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-18 07:39:17    | Alin Nuraeni                   | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-18 08:16:09    | Rani                           | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-18 08:54:31    | Rinda Alissha                  | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-02-18 09:47:37    | Nesya Rahma                    | Gelombang 1                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-02-20 14:01:23    | I’an putri Fitria nahdiyyah  | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-24 10:02:24    | Arnissa Kania Dewi             | Gelombang 1                    | Jalur Reguler P | Profesi Apoteker          | 10.000.000      | SUCCESS   
+2026-02-24 17:34:35    | Farell Muhammad Septian        | Gelombang 1                    | Jalur Reguler / | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-02-25 09:10:26    | Moh Faris Abqori               | Gelombang 1                    | Jalur Reguler / | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-02-25 11:31:28    | Adi Budi Ramadhan              | Gelombang 1                    | Jalur Mandiri P | Profesi Apoteker          | 10.000.000      | SUCCESS   
+2026-02-26 20:57:45    | Epi Prisnawati                 | Gelombang 2                    | Jalur Khusus Ke | Prodi Farmasi Program Mag | 2.500.000       | SUCCESS   
+2026-02-28 21:27:15    | Hilma Sa'adatunnisa            | Gelombang 2                    | Prestasi Khusus | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-03-01 19:19:28    | Sofi Siti Sofiah               | Gelombang 1                    | Jalur Reguler / | S1 - Sistem Informasi     | 1.000.000       | SUCCESS   
+2026-03-02 11:31:57    | bunga mawardi putri            | Gelombang 1                    | Jalur Reguler / | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-03-06 18:43:41    | Radit Rahman Nugraha           | Gelombang 1                    | Jalur Reguler / | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-03-06 21:36:48    | Arbian Alif Athaillah          | Gelombang 1                    | Jalur Reguler / | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-03-07 14:42:21    | intan octania                  | Gelombang 1                    | Jalur Reguler / | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-03-08 14:52:27    | Adhwa Rihadatul Aisy           | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-03-09 16:00:58    | Fitria nur apriliani           | Gelombang 2                    | One Day Service | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-03-10 09:03:36    | salma sadidah                  | Gelombang 1                    | Jalur Reguler / | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-03-11 11:31:20    | MELDIANA PUTRI                 | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-03-18 18:22:53    | Wahyu Saputra                  | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-23 14:53:52    | SALSABILAH NUROHMAH            | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-25 08:20:27    | Emillia                        | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-26 11:30:06    | Nasywaa putri irawan           | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-26 16:36:58    | Haevia Nafisah                 | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-27 09:19:45    | Fyca Ramadani                  | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-27 10:12:49    | Amanda Putri Yuliana           | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-27 11:17:16    | Dannisya Arvia Zahra           | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-03-27 17:39:09    | Novi Dewi Rahayuningsih        | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-29 22:41:28    | Asima Meliana Karunia          | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-31 14:23:21    | Adinda Nurul Fajri             | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-03-31 15:33:00    | Mutiara Okta Fadhillah         | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-01 09:41:59    | Salmah Putri Aprianti          | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-01 12:32:27    | Della Nur Alpiani              | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-01 19:52:20    | Dita Srirahayu                 | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-02 00:59:24    | Franski April Deando Agusti    | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-02 06:53:46    | Desfi Rahmanda                 | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-02 08:33:17    | PUTRI PRADANA KUSUMAH          | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-02 10:40:21    | Puspita Sari Puteri Dhira Atma | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-02 15:53:59    | Selvi centika                  | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-02 19:02:41    | Isya Insyirah                  | Gelombang 2                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-03 14:20:48    | sur pariza                     | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-03 16:28:28    | Dina Yuliansih                 | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-03 19:33:52    | Arafa Yazid Zidane             | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-04 11:47:04    | Dina Zakia Syahputri           | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-04 11:50:19    | TAMI                           | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-04 12:08:49    | ZELENA ADRIYANTI               | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-04 15:08:32    | Rian Trias Widyani             | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-04 15:38:42    | Nenden Puspita Hardani         | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-04 19:46:04    | Amanina Fauziyyah              | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-05 09:58:34    | SHOFY SALSABILA                | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-05 16:48:12    | Haical Rizdhan                 | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-06 08:40:07    | Dafa virgy firdaus             | Gelombang 2                    | One Day Service | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-06 09:19:04    | Dinda Marcella Angriani        | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-06 10:50:24    | Ray ardira sudarlan            | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-06 11:24:40    | Cecilia Ester Yunita Sitio     | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-06 11:33:48    | Nur Azizah Qistiyah            | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-06 11:40:35    | MUTIARTA NINGGI                | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-06 19:44:09    | thyzia putri syahla            | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-06 20:12:18    | Syaikha Fahrun Nisa            | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-06 20:14:56    | BELLA ANANDA CHRISNA           | Gelombang 2                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 06:46:33    | DESTI RAMADHANTI ALFAENI       | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 07:06:56    | Jihan Amirah Salsabila         | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 08:38:56    | Devi Agustin                   | Gelombang 2                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 08:39:04    | Lailatul Azmi                  | Gelombang 2                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 08:40:28    | Selvi Marsadella               | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 09:46:17    | LEVITRI OKTAPIA                | Gelombang 2                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 10:47:25    | Cempaka An-nisaa               | Gelombang 2                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 16:16:50    | Adhwa Rihadatul Aisy           | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 17:50:38    | Syakiratul Nur Humolungo       | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 17:52:03    | Tarisha Mokodompit             | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 17:52:12    | Siti Nur Halizah Rais          | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 19:53:48    | Salsabilla Nusi                | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 20:19:50    | Siti Nadia Khoerunnisa         | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 20:43:44    | Teni Sukmawati                 | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-07 21:50:15    | Intan fandini                  | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 06:52:42    | Alya Maghfirah Rahmadhani      | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 10:39:57    | faridz aditiya pahreza         | Gelombang 2                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 12:08:58    | Yosafat Mirnanto               | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 12:33:47    | Maheska Lola Juliani           | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 14:15:17    | Andi Ismanto                   | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 14:16:09    | Nurul istiqomah                | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 17:39:02    | Syarah Tsamrotul Fajriah       | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 17:41:49    | Ai ane nuraeni                 | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 19:03:23    | DHIFAH DHAIFINA                | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 20:08:47    | Nyimas Firdha Hafizah          | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-08 23:22:33    | Rizki Tria Alvionita,A.Md.,Far | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 08:14:05    | Ayu Nabilah                    | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 10:04:04    | Lina Marlina                   | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 10:10:25    | Nadiatussolihah                | Gelombang 2                    | One Day Service | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-04-09 10:35:13    | Evelyn Louise Berliana         | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 12:06:40    | Cindy Annisya Alman            | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 18:06:50    | Nadra anggreini                | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 18:52:32    | Detian septiandi               | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 19:45:50    | Siti diana                     | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 21:09:25    | Fathimah Shiddiq Az Zahra      | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 22:43:04    | Anggi Nur Alsafitri            | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-09 22:44:41    | Annisa Widy Utami              | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 08:56:30    | Ella Puspa Latifa              | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 09:11:25    | Fajar Sastra Prakasa           | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 09:33:09    | JUWITA SARTATI                 | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 11:18:46    | Jelita putri                   | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 11:21:41    | KENANGA RATU FAIRY             | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 11:37:18    | Agustina anjelin               | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 13:45:41    | M. Zhitqy Alfarist             | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 19:22:12    | Dini Febri Yani                | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-10 21:07:50    | Naufal Wira Mahardika          | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-14 15:06:21    | Sinta                          | Gelombang 1                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-15 13:02:15    | Devi Rahmawati                 | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-15 14:44:00    | Ijlal Imaro                    | Gelombang 2                    | One Day Service | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-16 09:47:12    | M RIZKA FITRIADI               | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-16 10:44:27    | PARIDA MAULANI                 | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-16 11:30:24    | putri melya nur azziziah       | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-16 11:34:28    | Diatra Siti Zulaikha           | Gelombang 2                    | PMDK Rapor      | S1 - Teknologi Pangan     | 1.000.000       | SUCCESS   
+2026-04-16 14:11:29    | Jastyadi Noor Wafa             | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-16 17:34:47    | Zahra Dwi Meilani Putri        | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-16 18:42:15    | Syakira Anindya Mayrain        | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-16 19:05:02    | Nabyela Tri Utami              | Gelombang 2                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-04-16 20:09:53    | FAQIH AHMAD NURHAYAT           | Gelombang 2                    | PMDK Rapor      | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-04-17 08:55:04    | Rania putri iman               | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-17 09:53:27    | RIMA AULIA                     | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-17 11:09:36    | Hasna Labibatu Amiroh          | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-17 12:06:50    | Ragga Thyariz Permana          | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-17 15:47:43    | ALIYA NURMAYANTI               | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-17 16:54:49    | Tanti sri rahayu               | Gelombang 2                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-04-18 08:08:01    | ESA NUR PUTRI                  | Gelombang 2                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-04-18 13:31:00    | Givarina Al Farizi             | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-18 22:36:10    | IRA SUKMALLINDA                | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-19 12:43:30    | Hilma Sa'adatunnisa            | Gelombang 2                    | Prestasi Khusus | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-19 19:04:12    | FATIMAH AZ ZAHRA               | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-20 08:20:01    | IYAN HARDIYANTI                | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-20 11:25:23    | Natasya Fairuz Maudysa         | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-20 11:30:10    | Sri Rejeki Hidayanti           | Gelombang 2                    | One Day Service | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-20 13:08:57    | Almira Khairunnisa Ainurrofiq  | Gelombang 2                    | PMDK Rapor      | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-04-20 13:46:45    | Malikha Pinkan Pratiwi         | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-20 14:32:20    | FAWWAZ FADHLILLAH FAHLEVI      | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-20 14:35:53    | NADIA MAHARANI                 | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-20 17:21:22    | Nazwa Kirania Isfahani         | Gelombang 2                    | Apresiasi Profe | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-04-20 19:15:14    | Farina Arsy Rojabi             | Gelombang 2                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-04-20 19:23:55    | Khadra Haura                   | Gelombang 2                    | PMDK Rapor      | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-04-20 22:23:01    | Hanifah Tsalitsa Rahmah        | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-21 11:03:18    | SRI PAJRIAH                    | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-21 13:53:50    | Distya augustina               | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-22 06:48:41    | Aulia putri nur apriliani      | Gelombang 2                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-04-22 07:08:13    | Shakila Alesha Kurniawan       | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-22 07:31:42    | PRAMIDYA NUR FADILAH           | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-22 11:42:04    | Ade Muftiya Saputri Azizah     | Gelombang 2                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-04-22 12:18:19    | Aulia Ristiani                 | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-22 12:19:14    | Refa Alkhalipa Kusdiawan       | Gelombang 2                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-04-22 14:17:59    | Sandra Tri Oktapia             | Gelombang 2                    | Jalur Reguler / | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-22 17:39:22    | Dhia Ragil                     | Gelombang 2                    | One Day Service | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-23 10:46:38    | Sri Wulan Handayani            | Gelombang 2                    | Apresiasi Profe | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-24 10:34:31    | Isny Nurul Fatimah             | Gelombang 2                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-04-24 15:16:03    | Siti Sopiatul Hamidah          | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-24 20:08:16    | MUHAMMAD SYUKUR ARYADI         | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-25 07:28:55    | Rita Fauzia Az-zahra           | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-25 14:09:07    | JIHAN RATU NADILLA             | Gelombang 2                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-04-25 16:44:26    | Ridwani Aqilah Auliya Hisnah   | Gelombang 1                    | Apresiasi Profe | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-26 19:08:38    | Sindi Rahmawati                | Gelombang 2                    | PMDK Rapor      | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-04-26 19:51:20    | Alisa Bunga Ramadani           | Gelombang 2                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-04-27 10:09:03    | Radithya Nugraha               | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-27 12:14:02    | Syalwa Nur Azizah              | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-27 13:44:31    | Gyan Sentiaji                  | Gelombang 2                    | Prestasi Khusus | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-27 15:50:44    | RIRI PUTRI ANJAYA              | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-28 09:16:51    | Ica Aprilia                    | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-28 13:09:44    | Mia Rachma Jelila              | Gelombang 2                    | PMDK Rapor      | S1 - Kewirausahaan        | 1.000.000       | SUCCESS   
+2026-04-28 20:21:48    | DAVINA SYLVA SANITRI RAHARJA   | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-29 07:23:30    | Anizar Keybar                  | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-29 10:33:39    | Siti Nurfadilah                | Gelombang 2                    | One Day Service | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-04-29 11:36:38    | RAIHAN PRAMANDHIKA             | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-29 12:52:18    | deby raissa haq                | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-29 14:24:34    | RENITA OKTAPIANI               | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-29 16:34:26    | Novi Nurlaela sari             | -                              | -               | -                         | 1.000.000       | SUCCESS   
+2026-04-29 17:09:14    | Raka Yudhistira                | Gelombang 2                    | Apresiasi Profe | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-04-29 20:07:37    | Sabrina Aura Karna Wijaya      | Gelombang 2                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-04-29 23:02:19    | KIRANA PUTRI RAMDANI           | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-04-30 07:33:05    | Intan Hamidatuzzakiah          | Gelombang 2                    | Prestasi Kejuar | S1 - Teknologi Pangan     | 1.000.000       | SUCCESS   
+2026-04-30 09:38:02    | Mukhlis idkhulussurur          | Gelombang 2                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-04-30 11:55:07    | Sri Marfiani Nalmas            | Gelombang 2                    | Jalur Prestasi  | S1 - Sistem Informasi     | 1.000.000       | SUCCESS   
+2026-04-30 19:03:31    | RISKA MUTIA ALJAHRA            | Gelombang 2                    | PMDK Rapor      | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-05-02 10:43:36    | anatasya  kirana mentari       | Gelombang 1                    | Jalur Prestasi  | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-04 18:17:31    | Fatimah Nurhayati              | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-05-05 15:48:56    | Varisa anatasya                | Gelombang 2                    | One Day Service | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-05-05 15:57:41    | nazwa zalfa fadilla            | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-06 12:41:29    | M. Syahrul Ramadhan            | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-05-07 11:34:33    | Silviana Dewi                  | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-07 16:07:07    | Rindi marwah                   | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-07 20:19:57    | Syahda Apriyanti Utami         | Gelombang 2                    | PMDK Rapor      | S1 - Sistem Informasi     | 1.000.000       | SUCCESS   
+2026-05-08 04:03:17    | Wina Parida                    | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-08 12:06:06    | TSABITA AZDIA NABIL            | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-08 13:56:20    | Carlene avissa nur rahman      | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-08 15:43:42    | Naja Syafiatunnisa             | -                              | -               | -                         | 1.000.000       | SUCCESS   
+2026-05-08 16:51:21    | Windi Ginan Naftali            | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-08 18:01:34    | Ersya virgiyaning tyas         | Gelombang 2                    | PMDK Rapor      | S1 - Teknologi Pangan     | 1.000.000       | SUCCESS   
+2026-05-09 07:07:00    | Nurlaeni                       | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-09 09:19:04    | athaleyla raissa               | Gelombang 2                    | PMDK Rapor      | S1 - Teknologi Pangan     | 1.000.000       | SUCCESS   
+2026-05-10 08:00:51    | RAISA LUSIANA                  | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-10 10:57:54    | Rafi Zaini Arrasyid            | Gelombang 2                    | PMDK Rapor      | S1 - Sistem Informasi     | 1.000.000       | SUCCESS   
+2026-05-10 17:57:55    | Fipit Nurfinalia               | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-05-10 20:06:23    | Khanza Aurellia Mulyadi        | Gelombang 2                    | PMDK Rapor      | S1 - Gizi                 | 1.000.000       | SUCCESS   
+2026-05-11 08:12:55    | Rahma Khoerunnisa              | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-11 08:16:37    | Chelsea Olivia Julianty        | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-11 09:01:35    | Alitha Naura Syakira Taruna    | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-11 12:10:14    | amanda aminatuzahra            | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-11 13:12:43    | FAIZ AHMAD ZULIANSYAH          | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-11 13:38:25    | MUHAMMAD RESAL                 | Gelombang 2                    | Jalur Reguler / | S1 - Kewirausahaan        | 1.000.000       | SUCCESS   
+2026-05-11 16:48:37    | Indah nurcahyani               | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-11 18:56:57    | Rizki Ramadhan                 | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-12 05:13:28    | Tedi Rizki Nugraha             | Gelombang 2                    | Jalur Prestasi  | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-12 08:57:18    | Ardya aeni                     | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-12 09:40:28    | RASYA YUSTIYANTI               | Gelombang 2                    | Apresiasi Profe | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-12 09:50:32    | Raden Fetti Febriyanti         | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 3.125.000       | SUCCESS   
+2026-05-12 13:50:14    | ROFI AMMAR DZAKI               | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-12 15:21:17    | Siva ofilia rahman             | Gelombang 2                    | Apresiasi Profe | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-12 17:13:32    | Zahra Ramadani                 | Gelombang 2                    | Jalur Prestasi  | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-12 18:00:33    | Nadif Ahmad Fahrial            | Gelombang 2                    | Apresiasi Profe | S1 - Sistem Informasi     | 1.000.000       | SUCCESS   
+2026-05-12 18:38:44    | Wildhan Rijallul Faza          | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-12 21:35:40    | MOHAMAD AZMI NOORZAMZAM        | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-12 21:56:16    | Dea fadilah                    | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-13 07:27:25    | GIFARY PAWANTEH                | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-13 09:52:26    | Muhamad Davin Fergiawan        | Gelombang 2                    | One Day Service | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-13 10:33:29    | Aditya Maulana                 | Gelombang 2                    | Jalur Prestasi  | S1 - Sistem Informasi     | 1.000.000       | SUCCESS   
+2026-05-13 11:05:33    | Teti Rahmadayanti              | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-13 14:25:23    | Acep Anang Herdiana            | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-13 16:12:49    | Permaysuri Alzena Siti Marwa   | Gelombang 2                    | Prestasi Kejuar | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-05-13 16:13:06    | Raka Bagja Pamungkas           | Gelombang 2                    | PMDK Rapor      | S1 - Teknologi Pangan     | 1.000.000       | SUCCESS   
+2026-05-13 16:41:49    | Deby Cintya Herdayanti         | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-05-13 17:07:46    | FUZI WIDYANATA                 | Gelombang 2                    | Apresiasi Profe | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-14 08:33:32    | Amanda priskila                | Gelombang 2                    | One Day Service | S1 - Teknologi Pangan     | 1.000.000       | SUCCESS   
+2026-05-14 12:37:23    | shefira destiany               | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-14 13:50:18    | HIBRAN MUHAMMAD HILMI NAZAR    | Gelombang 2                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-05-14 19:25:44    | kalycha tasya nurahman         | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-14 19:41:31    | Nijma Halma Refani             | Gelombang 2                    | PMDK Rapor      | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-05-14 20:23:33    | jihan raisya awwaliyyah        | Gelombang 2                    | PMDK Rapor      | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-05-14 20:25:44    | Reva Nur Azizah                | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-14 20:29:04    | Nizar Nitisara Alzena          | Gelombang 2                    | Apresiasi Profe | S1 - Gizi                 | 1.000.000       | SUCCESS   
+2026-05-14 20:49:53    | M Naufal Ramdan Nurroyan       | Gelombang 2                    | Apresiasi Profe | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-14 21:05:58    | Daniyal aura ramadhan          | Gelombang 2                    | Apresiasi Profe | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-05-14 21:17:56    | jihan raisya awwaliyyah        | Gelombang 2                    | PMDK Rapor      | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-05-15 13:26:07    | Dian Antati Puspita Dewi       | Gelombang 1                    | RPL (Rekognisi  | S1 - Farmasi              | 6.250.000       | SUCCESS   
+2026-05-16 12:19:35    | Berlian Trie Graschiela Hardiy | Gelombang 2                    | One Day Service | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-16 12:56:03    | Fatih Nur Faturrohman          | Gelombang 2                    | Apresiasi Profe | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-16 19:53:09    | Rais Rahmatilah                | Gelombang 2                    | Jalur Reguler / | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-05-18 08:26:05    | Neng Fatimatuzzahra            | Gelombang 2                    | PMDK Rapor      | S1 - Gizi                 | 1.000.000       | SUCCESS   
+2026-05-18 08:56:31    | AI NOVA WIJAYANTI              | Gelombang 2                    | One Day Service | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-19 12:12:54    | Tia Sapira                     | Gelombang 2                    | Kelas Kerjasama | D3 - Refraksi Optisi/Opto | 1.150.000       | SUCCESS   
+2026-05-20 16:39:32    | Fazry Caesario Misbahudin      | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-20 17:10:50    | Novi Nurlaela sari             | Gelombang 2                    | Kelas Kerjasama | D3 - Refraksi Optisi/Opto | 150.000         | SUCCESS   
+2026-05-20 19:14:21    | Gefira syahfarani              | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-20 21:18:10    | Rian Prayogi Sukamana          | Gelombang 2                    | Kelas Kerjasama | D3 - Refraksi Optisi/Opto | 1.150.000       | SUCCESS   
+2026-05-21 08:37:18    | Bintan Nazila Marsha           | Gelombang 2                    | PMDK Rapor      | D3 - Refraksi Optisi/Opto | 1.000.000       | SUCCESS   
+2026-05-22 09:52:40    | Aini Aspiati Rohmah            | Gelombang 2                    | Kelas Kerjasama | D3 - Refraksi Optisi/Opto | 1.150.000       | SUCCESS   
+2026-05-23 08:03:17    | FINA ULPA HASANAH              | Gelombang 2                    | One Day Service | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-05-23 10:43:20    | azkiya maulida rahmawati       | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-25 15:01:16    | Mochammad billal               | Gelombang 2                    | One Day Service | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-05-25 16:52:55    | Salwa Syifaul Qolbi            | Gelombang 2                    | Apresiasi Profe | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-05-26 13:40:44    | Melinda prima setiani          | Gelombang 1                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-26 14:35:49    | Maulana Yusuf juliawan         | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-26 15:59:13    | Tresna widyasari               | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-27 09:28:00    | Raini Zahratusita              | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-27 18:31:23    | RAJA ABDILLAH AMRI NUGRAHA     | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-28 08:26:20    | RAFAEL KUSUMA FASHA            | Gelombang 2                    | PMDK Rapor      | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-28 10:53:07    | Kamelia Qurrotun Nada          | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-28 11:22:22    | Ashfiya althof inayah          | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-28 16:54:27    | Alief Hibban Al Ghifari        | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-29 08:51:08    | Indi Meilani                   | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-29 10:12:03    | Sifa Aulia Hermansyah          | Gelombang 2                    | One Day Service | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-29 11:00:35    | Nita Agustina                  | Gelombang 2                    | PMDK Rapor      | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-29 11:33:11    | Karinda Dewi Amel Lia          | -                              | -               | -                         | 1.000.000       | SUCCESS   
+2026-05-29 12:52:56    | ALWA SYEHLIANA SARI            | Gelombang 2                    | PMDK Rapor      | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-05-29 15:01:12    | Dian Safitri                   | Gelombang 2                    | One Day Service | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-29 17:32:33    | AZKIA OKTAVIANI                | Gelombang 2                    | One Day Service | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-29 18:20:48    | Andika Aulia Al Mulki          | Gelombang 2                    | Apresiasi Profe | S1 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-29 18:50:46    | Riri Aulia Astuti              | Gelombang 2                    | One Day Service | D3 - Keperawatan          | 1.000.000       | SUCCESS   
+2026-05-29 19:22:52    | Anisa Ragitha Syabani          | Gelombang 2                    | PMDK Rapor      | S1 - Administrasi Rumah S | 1.000.000       | SUCCESS   
+2026-05-29 19:39:21    | Sindi Putri Yanti              | Gelombang 2                    | PMDK Rapor      | D3 - Analis Kesehatan / T | 1.000.000       | SUCCESS   
+2026-05-30 07:26:57    | vanesa azzahra                 | Gelombang 2                    | One Day Service | S1 - Bisnis Digital       | 1.000.000       | SUCCESS   
+2026-05-30 15:41:42    | sundari cahya suci ramadhani   | Gelombang 2                    | PMDK Rapor      | S1 - Farmasi              | 1.000.000       | SUCCESS   
+2026-05-31 15:53:16    | Syifa Fawwazah                 | -                              | -               | -                         | 1.000.000       | SUCCESS   
+2026-06-01 16:53:47    | Resti Setiawati                | Gelombang 2                    | Kelas Kerjasama | D3 - Refraksi Optisi/Opto | 1.150.000       | SUCCESS   
+2026-06-02 08:29:46    | Sefhia Davvina Khoerunnisa     | Gelombang 2                    | One Day Service | S1 - Gizi                 | 1.000.000       | SUCCESS   
+================================================================================================================================================================
+TOTAL PENDAPATAN                                                                                                                      | 3.352.125.000   |

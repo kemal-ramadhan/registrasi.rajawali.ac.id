@@ -1,0 +1,982 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Result extends Model
+{
+    protected $fillable = [
+        'exam_participants_id',
+        'score',
+        'description',
+        'status',
+    ];
+
+    public function examParticipant()
+    {
+        return $this->belongsTo(Exam_participants::class, 'exam_participants_id');
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Paymant extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'program_option_id',
+        'merchant_order_id',
+        'payment_method',
+        'amount',
+        'status',
+    ];
+
+    // Relasi ke User
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    // Relasi ke ProgramOption
+    public function programOption()
+    {
+        return $this->belongsTo(ProgramOption::class);
+    }
+    
+    // app/Models/Paymant.php
+    public function paymantMethod()
+    {
+        return $this->belongsTo(PaymantMethod::class, 'paymant_method_id');
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class PersonalData extends Model
+{
+    // Pada model PersonalData
+    protected $fillable = [
+        'user_id',
+        'referal_id',
+        'gander',
+        'nik',
+        'nisn',
+        'place_of_birth',
+        'date_of_birth',
+        'religion',
+        'media_information',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    
+    public function referal()
+    {
+        return $this->belongsTo(Referal::class);
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Departement extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'faculty_id',
+        'code',
+        'name',
+        'description',
+        'image',
+        'status',
+    ];
+
+    public function faculty()
+    {
+        return $this->belongsTo(Faculty::class);
+    }
+
+    public function registrationPaths()
+    {
+        return $this->belongsToMany(RegistrationPath::class, 'registration_departements')
+                    ->withPivot('id') // Mengambil ID dari tabel pivot
+                    ->withTimestamps();
+    }
+
+    public function programOptions()
+    {
+        return $this->hasMany(ProgramOption::class);
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Income extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'source',
+        'amount',
+    ];
+    
+    // Relasi dengan model User
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class NimSequence extends Model
+{
+    protected $fillable = [
+        'departement_id',
+        'year',
+        'registration_path_code',
+        'last_number'
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Answer extends Model
+{
+    protected $fillable = [
+        'exam_participants_id',
+        'questions_id',
+        'answer',
+        'is_correct',
+        'point',
+    ];
+    
+    public function question()
+    {
+        return $this->belongsTo(Questions::class, 'questions_id');
+    }
+
+    public function choice()
+    {
+        return $this->belongsTo(Choices_question::class, 'answer');
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Exam_lisan extends Model
+{
+    protected $fillable = [
+        'exams_id',
+        'media',
+        'link',
+        'description',
+        'status',
+    ];    
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+
+class User extends Authenticatable implements MustVerifyEmail
+// class User extends Authenticatable
+{
+    /** @use HasFactory<\Database\Factories\UserFactory> */
+    use HasFactory, Notifiable;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var list<string>
+     */
+    protected $fillable = [
+        'name',
+        'email',
+        'phone',
+        'role',
+        'profile',
+        'email_verified_at',
+        'password',
+        'email_otp','email_otp_expires_at','email_otp_attempts'
+    ];
+
+    protected $casts = [
+        'email_otp_expires_at' => 'datetime',
+        'email_verified_at' => 'datetime',
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var list<string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+        ];
+    }
+
+    /**
+     * Relasi ke tabel addresses (satu pengguna memiliki satu alamat)
+     */
+    public function personal()
+    {
+        return $this->hasOne(PersonalData::class);
+    }
+    
+    public function education()
+    {
+        return $this->hasOne(Education::class);
+    }
+
+    public function address()
+    {
+        return $this->hasOne(Address::class);
+    }
+    
+    public function income()
+    {
+        return $this->hasOne(Income::class);
+    }
+    public function family()
+    {
+        return $this->hasMany(Family::class);
+    }
+    public function examParticipant()
+    {
+        return $this->hasOne(Exam_participants::class, 'user_id');
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Mahasiswa_cicilan extends Model
+{
+    protected $fillable = [
+        'mahasiswa_id',
+        'biaya_id',
+        'scema_cicilan_id',
+    ];
+
+    public function mahasiswa()
+    {
+        return $this->belongsTo(Mahasiswa::class);
+    }
+
+    public function biaya()
+    {
+        return $this->belongsTo(Biaya::class);
+    }
+
+    public function scemaCicilan()
+    {
+        return $this->belongsTo(Scema_cicilan::class);
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ProgramOption extends Model
+{
+    public $timestamps = true; // Pastikan timestamps aktif
+    protected $fillable = [
+        'registration_path_id',
+        'departement_id',
+        'user_id',
+        'program_option',
+        'status',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function registrationPath()
+    {
+        return $this->belongsTo(RegistrationPath::class);
+    }
+
+    public function departement()
+    {
+        return $this->belongsTo(Departement::class);
+    }
+
+    public function mahasiswa()
+    {
+        return $this->hasOne(Mahasiswa::class, 'user_id', 'user_id');
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Scema_cicilan extends Model
+{
+    protected $fillable = [
+        'biaya_id',
+        'description',
+        'potongan',
+        'jumlah_cicilan',
+        'status',
+    ];
+
+    public function biaya()
+    {
+        return $this->belongsTo(Biaya::class);
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Choices_question extends Model
+{
+    protected $fillable = [
+        'questions_id',
+        'choice',
+        'is_correct',
+    ];
+
+    // Relasi banyak ke satu (many-to-one) ke Questions
+    public function question()
+    {
+        return $this->belongsTo(Questions::class);
+    }
+    
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class RegistrationTest extends Model
+{
+    protected $fillable = [
+        'registration_path_id',
+        'name',
+        'description',
+        'start_date',
+        'end_date',
+        'image',
+        'link_grup',
+        'status',
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Nim_mahasiswa extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'departement_id',
+        'nim',
+        'angkatan',
+        'status',
+    ];    
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class RegistrationPath extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'code',
+        'code_year',
+        'name',
+        'title',
+        'description',
+        'image',
+        'start_date',
+        'end_date',
+        'amount',
+        'link_grup',
+        'status',
+    ];
+
+    public function departements()
+    {
+        return $this->belongsToMany(Departement::class, 'registration_departements')
+                    ->withPivot('id') // Mengambil ID dari tabel pivot
+                    ->withTimestamps();
+    }
+
+    public function programOptions()
+    {
+        return $this->hasMany(ProgramOption::class);
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Address extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'country',
+        'province',
+        'city',
+        'district',
+        'village',
+        'code',
+        'address',
+    ];
+    
+    // Relasi dengan model User
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class PembayaranBK extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'program_option_id',
+        'referal_id',
+        'nominal',
+        'type',
+        'status_approve',
+        'status_keuangan',
+    ];
+
+    // App\Models\PembayaranBK.php
+    public function referal()
+    {
+        return $this->belongsTo(Referal::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Education extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'last_education',
+        'country',
+        'province',
+        'city',
+        'type',
+        'name_of_institution',
+        'departement',
+        'year_of_graduation',
+        'grade',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Mahasiswa extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'departement_id',
+        'nim',
+        'angkatan',
+        'status',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function departement()
+    {
+        return $this->belongsTo(Departement::class);
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class PaymantMethod extends Model
+{
+    protected $fillable = [
+        'paymant_method_kategori_id',
+        'methode',
+        'methode_initial',
+        'image',
+        'biaya_admin',
+        'status'
+    ];
+
+    public function paymantKategori()
+    {
+        return $this->belongsTo(PaymantMethodKategori::class, 'paymant_method_kategori_id');
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class DocumentRequirement extends Model
+{
+    use HasFactory;
+
+    protected $table = 'document_requirements';
+
+    protected $fillable = [
+        'program_option_id',
+        'registration_dokumen_id',
+        'file',
+        'description',
+        'status',
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class RegistrationDepartement extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'registration_path_id',
+        'departement_id',
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Detail_scema_cicilan extends Model
+{
+    protected $fillable = [
+        'scema_cicilan_id',
+        'cicilan_ke',
+        'nominal',
+        'tengat',
+    ];
+
+    public function scema_cicilan()
+    {
+        return $this->belongsTo(Scema_cicilan::class);
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Exams extends Model
+{
+    protected $fillable = [
+        'registration_path_id',
+        'name',
+        'description',
+        'start_date',
+        'duration',
+        'pengerjaan',
+        'pengerjaan_waktu',
+        'type',
+        'status',
+    ];
+
+    public function registration_path()
+    {
+        return $this->belongsTo(RegistrationPath::class);
+    }
+    
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Mahasiswa_paymant extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'mahasiswa_id',
+        'biaya_id',
+        'scema_cicilan_id',
+        'detail_scema_cicilan_id',
+        'transaction_id',
+        'merchant_order_id',
+        'payment_method',
+        'amount',
+        'status',
+    ];
+
+    public function mahasiswa()
+    {
+        return $this->belongsTo(Mahasiswa::class);
+    }
+
+    public function biaya()
+    {
+        return $this->belongsTo(Biaya::class);
+    }
+
+    public function scemaCicilan()
+    {
+        return $this->belongsTo(Scema_cicilan::class);
+    }
+
+    public function detailScemaCicilan()
+    {
+        return $this->belongsTo(Detail_scema_cicilan::class);
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class DokumenFirst extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'personal_foto',
+        'personal_card',
+        'family_foto',
+        'family_card',
+        'description',
+        'status',
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class AkunSistem extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'username',
+        'password',
+        'status',
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Biaya extends Model
+{
+    protected $fillable = [
+        'biaya',
+        'description',
+        'nominal',
+        'type',
+        'tengat_akhir',
+        'status',
+    ];
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class RegistrationDokumen extends Model
+{
+    protected $table = 'registration_dokumens';
+
+    protected $fillable = [
+        'registration_path_id',
+        'dokumen_name',
+        'slug_name',
+        'description',
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Family extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'relation',
+        'name',
+        'status',
+        'phone',
+        'job',
+        'education',
+        'address',
+    ];
+
+    // Relasi dengan model User
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ProgramLevel extends Model
+{
+    protected $fillable = [
+        'code',
+        'title',
+        'description',
+        'image',
+        'status',
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class MyRegistrationTest extends Model
+{
+    //
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Questions extends Model
+{
+    protected $fillable = [
+        'exams_id',
+        'type',
+        'question',
+        'point',
+    ];    
+
+    // Relasi one-to-many dengan Choice
+    public function choices()
+    {
+        return $this->hasMany(Choices_question::class);  // Pastikan nama model Choice sesuai dengan nama file model
+    }
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class PaymantMethodKategori extends Model
+{
+    protected $fillable = [
+        'name',
+        'status',
+    ];
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Faculty extends Model
+{
+    protected $fillable = [
+        'program_level_id',
+        'code',
+        'name',
+        'description',
+        'image',
+        'status',
+    ];
+
+    public function programLevel()
+    {
+        return $this->belongsTo(ProgramLevel::class);
+    }
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Exam_participants extends Model
+{
+    protected $fillable = [
+        'exams_id',
+        'user_id',
+        'start_date',
+        'end_date',
+        'point',
+        'token',
+        'status',
+    ];
+    
+    public function answers()
+    {
+        return $this->hasMany(Answer::class, 'exam_participants_id');
+    }
+
+    public function exam()
+    {
+        return $this->belongsTo(Exams::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+
+}
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Referal extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'institution',
+        'code',
+        'code_pembayaran',
+        'description',
+        'status',
+    ];
+
+    // Relasi ke PersonalData (satu referal bisa dipakai oleh banyak personal data)
+    public function personalData()
+    {
+        return $this->hasMany(PersonalData::class, 'referal_id');
+    }
+    
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    // App\Models\Referal.php
+    public function pembayaranBk()
+    {
+        return $this->hasMany(PembayaranBK::class, 'referal_id');
+    }
+
+}
