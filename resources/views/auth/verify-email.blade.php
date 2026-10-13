@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verifikasi OTP</title>
     @vite('resources/css/app.css')
-    <link rel="shortcut icon" href="{{ asset('assets/icons/bth.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/icons/IKes.png') }}" type="image/x-icon">
 
 <!-- Meta Pixel Code -->
   <script>
@@ -29,7 +29,7 @@
   </script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1331395535059424&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
+  <!-- End Metaï¿½Pixelï¿½Codeï¿½-->
 
   <!-- kampus -->
   <!-- Meta Pixel Code -->

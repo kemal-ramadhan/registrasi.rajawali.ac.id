@@ -30,7 +30,7 @@
                     class="border border-gray-200 p-5 rounded-2xl shadow-sm bg-white hover:shadow-md transition duration-200 ease-in-out w-full space-y-3">
                     <div class="flex flex-col gap-2">
                         <h1 class="font-sora font-semibold text-gray-800 text-lg">Informasi Kartu Peserta</h1>
-                        <span>Perhatian Bagi Calon Mahasiswa Baru Universitas Bakti Tunas Husada! Group WA Wajib
+                        <span>Perhatian Bagi Calon Mahasiswa Baru Institut Kesehatan Rajawali! Group WA Wajib
                             Diikuti, semua informasi penting
                             disalurkan melalui grup.</span>
                     </div>

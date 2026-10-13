@@ -1,4 +1,4 @@
-@extends('auth.template', ['title' => 'Registration', 'headline' => 'Yuk, Jadi bagian dari Universitas Bakti Tunas Husada!', 'subheadline' => 'Daftarkan dirimu sekarang dan mulai perjalanan serumu sebagai mahasiswa Universitas-BTH!'])
+@extends('auth.template', ['title' => 'Registration', 'headline' => 'Yuk, Jadi bagian dari Institut Kesehatan Rajawali!', 'subheadline' => 'Daftarkan dirimu sekarang dan mulai perjalanan serumu sebagai mahasiswa Institut Kesehatan Rajawali!'])
 
 @section('content')
 <div class="w-full">

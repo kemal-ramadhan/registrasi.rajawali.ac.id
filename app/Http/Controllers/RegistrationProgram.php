@@ -173,7 +173,7 @@ if ($registrationPath && $registrationPath->status == 'close' && !$sudahBayar) {
     public function akun($id)
     {
         $data = [
-            'judul'   => 'Akun Calon Mahasiswa Universitas Bakti Tunas Husada',
+            'judul'   => 'Akun Calon Mahasiswa Institut Kesehatan Rajawali',
             'tanggal' => now()->format('d-m-Y'),
         ];
 

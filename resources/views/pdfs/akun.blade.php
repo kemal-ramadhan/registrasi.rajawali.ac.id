@@ -103,7 +103,7 @@
 
         .jadwal-ujian::before {
             content: "";
-            background: url("{{ public_path('assets/icons/bth.png') }}") center no-repeat;
+            background: url("{{ public_path('assets/icons/IKes.png') }}") center no-repeat;
             background-size: 40mm;
             opacity: 0.08;
             position: absolute;
@@ -179,9 +179,9 @@
 
         <!-- HEADER -->
         <div class="header-universitas">
-            <img src="{{ public_path('assets/icons/bth.png') }}" class="logo-header" alt="Logo">
+            <img src="{{ public_path('assets/icons/IKes.png') }}" class="logo-header" alt="Logo">
             <h1>KARTU PESERTA</h1>
-            <p>UNIVERSITAS BAKTI TUNAS HUSADA</p>
+            <p>INSTITUT KESEHATAN RAJAWALI</p>
             <p>Jl. Letjen Mashudi No.20, Tasikmalaya</p>
         </div>
 
@@ -233,7 +233,7 @@
             </div>
             <div class="ttd-panitia">
                 <div class="space"></div>
-                <div class="garis">Admisi UBTH</div>
+                <div class="garis">Admisi IKes Rajawali</div>
             </div>
         </div>
 

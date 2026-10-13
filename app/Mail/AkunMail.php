@@ -32,7 +32,7 @@ class AkunMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Akun Calon Mahasiswa Universitas Pasundan',
+            subject: 'Akun Calon Mahasiswa Institut Kesehatan Rajawali',
         );
     }
 

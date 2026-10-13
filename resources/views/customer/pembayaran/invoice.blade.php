@@ -6,14 +6,14 @@
                 <div>
                     <h2 class="text-2xl sm:text-3xl font-bold mb-2">INVOICE</h2>
                     <p class="text-sm text-gray-500">Billed to</p>
-                    <p class="text-sm">Universitas Bakti Tunas Husada</p>
+                    <p class="text-sm">Institut Kesehatan Rajawali</p>
                     <p class="text-sm">Jl. Letjen Mashudi No.20, Setiaratu,</p>
                     <p class="text-sm">Kec. Cibeureum, Kab. Tasikmalaya,</p>
                     <p class="text-sm">Jawa Barat 46196, (0265) 334740</p>
                 </div>
                 <div class="text-left sm:text-right">
-                    <img src="{{ asset('assets/icons/bth.png') }}" alt="Company Logo" class="h-14 sm:ml-auto">
-                    <p class="text-blue-600 font-semibold mt-2">Universitas Bakti Tunas Husada</p>
+                    <img src="{{ asset('assets/icons/IKes.png') }}" alt="Institut Kesehatan Rajawali" class="h-14 sm:ml-auto">
+                    <p class="text-blue-600 font-semibold mt-2">Institut Kesehatan Rajawali</p>
                     <p class="text-sm">Jl. Letjen Mashudi No.20, Setiaratu,</p>
                     <p class="text-sm">Kec. Cibeureum, Kab. Tasikmalaya,</p>
                     <p class="text-sm">Jawa Barat 46196, (0265) 334740</p>

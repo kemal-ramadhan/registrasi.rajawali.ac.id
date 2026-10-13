@@ -209,11 +209,11 @@
                 </div>
                 <div class="flex flex-col mb-3">
                     <label for="media_information" class="font-sora font-semibold">Media Info / Mengetahui
-                        UBTH Dari</label>
-                    <small class="font-sora"><i>UBTH Information Media Sources</i></small>
+                        IKes Rajawali Dari</label>
+                    <small class="font-sora"><i>IKes Rajawali Information Media Sources</i></small>
                     <select name="media_information" id="media_information" required
                         class="py-2 px-5 border border-gray-500 w-full rounded-md my-2 bg-transparent">
-                        <option value="">UBTH Information Media Sources</option>
+                        <option value="">IKes Rajawali Information Media Sources</option>
                         <option value="Instagram" {{ (isset($personalData->media_information) &&
                             $personalData->media_information == 'Instagram') || old('media_information') == 'Instagram'
                             ? 'selected' : '' }}>

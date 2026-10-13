@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penerimaan Mahasiswa Baru - Universitas Pasundan</title>
+    <title>Penerimaan Mahasiswa Baru - Institut Kesehatan Rajawali</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -485,10 +485,10 @@
                         <td class="header">
                             <table>
                                 <tr>
-                                    <td><img src="https://registrasi.unpas.ac.id/assets/emails/unpas.png" alt="Logo UNPAS" class="logo"></td>
+                                    <td><img src="{{ asset('assets/icons/IKes.png') }}" alt="Logo Institut Kesehatan Rajawali" class="logo"></td>
                                     <td class="header-text">
                                         <div class="header-title">Penerimaan Mahasiswa Baru</div>
-                                        <div class="header-university">Universitas Pasundan</div>
+                                        <div class="header-university">Institut Kesehatan Rajawali</div>
                                     </td>
                                 </tr>
                             </table>
@@ -499,11 +499,11 @@
                 <table class="content-table" style="background-color: #FFFFFF; border-radius: 30px;">
                     <tr>
                         <td class="content">
-                            <h1 class="main-heading">Selamat Bergabung di PMB UNPAS! <br class="responsive-br"> Saatnya Lanjutkan
+                            <h1 class="main-heading">Selamat Bergabung di PMB Institut Kesehatan Rajawali! <br class="responsive-br"> Saatnya Lanjutkan
                                 Pendaftaranmu</h1>
 
                             <p class="greeting">Halo {{ $name }},</p>
-                            <p class="thank-you">Terima kasih telah mendaftar di Universitas Pasundan.</p>
+                            <p class="thank-you">Terima kasih telah mendaftar di Institut Kesehatan Rajawali.</p>
                             <p class="account-confirmation">Akun kamu telah berhasil dibuat di sistem pendaftaran online kami.</p>
 
                             <div class="poster_box">

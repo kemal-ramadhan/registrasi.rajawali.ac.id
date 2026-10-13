@@ -56,7 +56,7 @@
                         @php
                             $whatsappNumber = '6282117100200'; // nomor tanpa +
                             $message =
-                                'Halo Admin UBTH! 👋%0ASaya ingin meminta bantuan terkait jalur pendaftaran: *' .
+                                'Halo Admin IKes Rajawali! 👋%0ASaya ingin meminta bantuan terkait jalur pendaftaran: *' .
                                 $registrationsPath->name .
                                 ' - ' .
                                 $registrationsPath->title .

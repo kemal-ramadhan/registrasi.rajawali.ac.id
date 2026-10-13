@@ -72,7 +72,7 @@
                     <img src="{{ asset('assets/icons/outline.png') }}" alt="outline"
                         class="w-40 absolute -right-10 opacity-45">
                     <h1 class="font-sora font-semibold text-xl text-center">
-                        Universitas Bakti Tunas Husada
+                        Institut Kesehatan Rajawali
                     </h1>
                     <h1 class="font-sora font-semibold mb-3 text-center">
                         Kartu Mahasiswa

@@ -4,7 +4,7 @@
 <div class="grid grid-cols-1 md:grid-cols-4 gap-5 my-5 items-start">
     <div class="flex flex-col gap-1 md:col-span-4">
         <small class="font-sora text-2xl font-thin">Selamat Datang, {{ auth()->user()->name }}!</small>
-        <span class="font-sora">Dashboard Admin Sistem Penerimaan Mahasiswa Baru Universitas Bakti Tunas Husada.</span>
+        <span class="font-sora">Dashboard Admin Sistem Penerimaan Mahasiswa Baru Institut Kesehatan Rajawali.</span>
     </div>
     <div
         class="group relative bg-white transition-all duration-300 p-5 rounded-2xl shadow-md hover:shadow-xl w-full flex flex-col gap-4">

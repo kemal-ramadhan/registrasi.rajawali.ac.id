@@ -1,6 +1,6 @@
 {
-    "name": "PMB Unpas",
-    "short_name": "PMB",
+    "name": "PMB Institut Kesehatan Rajawali",
+    "short_name": "PMB IKes",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
@@ -8,15 +8,15 @@
     "orientation": "portrait",
     "icons": [
       {
-        "src": "/assets/icons/unpas.png",
+        "src": "/assets/icons/IKes.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/assets/icons/unpas.png",
+        "src": "/assets/icons/IKes.png",
         "sizes": "512x512",
         "type": "image/png"
       }
     ]
-  }
+}
   

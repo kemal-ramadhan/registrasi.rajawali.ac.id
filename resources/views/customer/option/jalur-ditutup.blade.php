@@ -29,7 +29,7 @@
                         </svg>
                         <div>
                             <p class="font-semibold text-red-700 text-sm">Jalur yang Ditutup</p>
-                            <p class="text-red-600 text-sm mt-1">{{ $registrationPath->name }} — {{ $registrationPath->title }}</p>
+                            <p class="text-red-600 text-sm mt-1">{{ $registrationPath->name }} Â— {{ $registrationPath->title }}</p>
                         </div>
                     </div>
                 </div>

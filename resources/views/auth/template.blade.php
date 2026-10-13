@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#4A90E2">
 
     <!-- Untuk Android -->
-    <link rel="icon" sizes="192x192" href="{{ asset('assets/icons/bth.png') }}">
+    <link rel="icon" sizes="192x192" href="{{ asset('assets/icons/IKes.png') }}">
     <!-- Untuk iOS -->
-    <link rel="apple-touch-icon" href="{{ asset('assets/icons/bth.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('assets/icons/IKes.png') }}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -16,8 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
-    <link rel="shortcut icon" href="{{ asset('assets/icons/bth.png') }}" type="image/x-icon">
-    <title>{{ $title }} | Universitas Bakti Tunas Husada</title>
+    <link rel="shortcut icon" href="{{ asset('assets/icons/IKes.png') }}" type="image/x-icon">
+    <title>{{ $title }} | Institut Kesehatan Rajawali</title>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -115,12 +115,12 @@
             
             <!-- Header (Logo & Judul) -->
             <div class="flex flex-col items-center justify-center text-center mb-8">
-                <img src="{{ asset('assets/icons/bth.png') }}" alt="Logo Universitas BTH" class="w-20 h-20 mb-5 object-contain">
+                <img src="{{ asset('assets/icons/IKes.png') }}" alt="Logo Institut Kesehatan Rajawali" class="w-20 h-20 mb-5 object-contain">
                 <h1 class="text-2xl sm:text-3xl font-sora font-bold text-slate-800 leading-tight">
                     {{ $headline ?? 'Selamat Datang' }}
                 </h1>
                 <h2 class="text-sm sm:text-base font-sora text-slate-500 mt-2">
-                    {{ $subheadline ?? 'Penerimaan Mahasiswa Baru Universitas Bakti Tunas Husada' }}
+                    {{ $subheadline ?? 'Penerimaan Mahasiswa Baru Institut Kesehatan Rajawali' }}
                 </h2>
             </div>
 
@@ -134,7 +134,7 @@
 
     <!-- Floating WhatsApp Button -->
     <a
-        href="https://api.whatsapp.com/send?phone=6282117100200&text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20Pendaftaran%20Mahasiswa%20Baru%20(PMB)%20Universitas%20BTH."
+        href="https://api.whatsapp.com/send?phone=6282117100200&text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20Pendaftaran%20Mahasiswa%20Baru%20(PMB)%20Institut%20Kesehatan%20Rajawali."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat via WhatsApp"

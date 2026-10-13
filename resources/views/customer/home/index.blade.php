@@ -160,12 +160,12 @@
                         class="w-32 drop-shadow-md animate-bounce-slow">
                     <div class="flex flex-col">
                         <h2 class="text-lg font-bold text-indigo-700 mb-2">
-                            👋 Halo Sobat UBTH!
+                            👋 Halo Sobat IKes Rajawali!
                         </h2>
                         <p class="text-gray-700 font-medium leading-relaxed">
                             Yuk isi <span class="font-semibold text-indigo-600">Biodata Kamu</span>
                             , mulai perjalanan akademikmu bersama
-                            <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🎓
+                            <span class="font-bold text-indigo-700">Institut Kesehatan Rajawali!</span> 🎓
                         </p>
                     </div>
                 @else
@@ -180,10 +180,10 @@
                                     gemilang dimulai di sini! 💫 Segera lakukan <span
                                         class="font-semibold text-indigo-600">pembayaran formulir pendaftaran</span> agar
                                     kamu bisa melanjutkan ke tahap berikutnya dan resmi menjadi calon mahasiswa <span
-                                        class="font-bold text-indigo-700">Universitas Bakti Tunas Husada</span>. Jangan
+                                        class="font-bold text-indigo-700">Institut Kesehatan Rajawali</span>. Jangan
                                     tunda kesempatanmu untuk bergabung dengan kampus yang penuh inspirasi dan prestasi! 🎓
                                     Yuk, amankan kursimu sekarang juga dan wujudkan impianmu bersama <span
-                                        class="font-bold text-indigo-700">UBTH</span>! 🚀 </p>
+                                        class="font-bold text-indigo-700">IKes Rajawali</span>! 🚀 </p>
                             </div>
                         @endif
                         @if ($programOptions[0]->status == 'Verifikasi Guru BK')
@@ -194,7 +194,7 @@
                                 <p class="text-gray-700 font-medium leading-relaxed"> Yu Hubungi Guru BK Untuk Verifikasi Pembayaran 🚀. Jangan
                                     tunda kesempatanmu untuk bergabung dengan kampus yang penuh inspirasi dan prestasi! 🎓
                                     Yuk, amankan kursimu sekarang juga dan wujudkan impianmu bersama <span
-                                        class="font-bold text-indigo-700">UBTH</span>! 🚀 </p>
+                                        class="font-bold text-indigo-700">IKes Rajawali</span>! 🚀 </p>
                             </div>
                         @endif
                         @if ($programOptions[0]->status == 'Upload Dokumen')
@@ -206,12 +206,12 @@
                                 </h2>
                                 <p class="text-gray-700 font-medium leading-relaxed">
                                     Saatnya selangkah lebih dekat menuju impianmu di
-                                    <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🎓
+                                    <span class="font-bold text-indigo-700">Institut Kesehatan Rajawali!</span> 🎓
                                     Unggah <span class="font-semibold text-indigo-600">dokumen persyaratan</span> kamu
                                     dengan
                                     lengkap dan pastikan semuanya benar agar proses pendaftaranmu berjalan lancar.
                                     Semakin cepat kamu unggah, semakin cepat kamu bisa jadi bagian dari keluarga besar <span
-                                        class="font-bold text-indigo-700">UBTH!</span> 🚀
+                                        class="font-bold text-indigo-700">IKes Rajawali!</span> 🚀
                                 </p>
                                 <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
                                     class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
@@ -232,7 +232,7 @@
                                     Yuk, segera perbarui dokumenmu supaya proses verifikasi berjalan lancar dan kamu bisa
                                     lanjut
                                     ke tahap berikutnya di
-                                    <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🚀
+                                    <span class="font-bold text-indigo-700">Institut Kesehatan Rajawali!</span> 🚀
                                 </p>
                                 <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
                                     class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
@@ -250,7 +250,7 @@
                                         kelengkapan dan keaslian dokumenmu</span>.
                                     Mohon bersabar ya, proses ini biasanya tidak memakan waktu lama.
                                     Tetap pantau status pendaftaranmu dan bersiaplah untuk langkah berikutnya di
-                                    <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🎓
+                                    <span class="font-bold text-indigo-700">Institut Kesehatan Rajawali!</span> 🎓
                                 </p>
                                 <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
                                     class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
@@ -278,14 +278,14 @@
                                 class="w-32 drop-shadow-md animate-bounce-slow">
                             <div class="flex flex-col">
                                 <h2 class="text-lg font-bold text-indigo-700 mb-2">
-                                    🎉 Selamat! Kamu Dinyatakan Lulus Seleksi UBTH!
+                                    🎉 Selamat! Kamu Dinyatakan Lulus Seleksi IKes Rajawali!
                                 </h2>
                                 <p class="text-gray-700 font-medium leading-relaxed">
                                     Perjuanganmu membuahkan hasil! 🌟
                                     Kamu resmi <span class="font-semibold text-indigo-600">lulus tahapan seleksi</span> dan
                                     siap melangkah ke tahap berikutnya —
                                     <span class="font-bold text-indigo-700">daftar ulang sebagai calon mahasiswa
-                                        UBTH</span>.
+                                        IKes Rajawali</span>.
                                     Yuk, segera lengkapi prosesnya dan mulai perjalanan akademikmu bersama kami! 🚀
                                 </p>
                                 <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
@@ -297,7 +297,7 @@
                                 class="w-32 drop-shadow-md animate-bounce-slow">
                             <div class="flex flex-col">
                                 <h2 class="text-lg font-bold text-indigo-700 mb-2">
-                                    🥳 Selamat Datang di Keluarga UBTH!
+                                    🥳 Selamat Datang di Keluarga IKes Rajawali!
                                 </h2>
                                 <p class="text-gray-700 font-medium leading-relaxed">
                                     Kamu udah resmi diterima, lho! 🎓
@@ -305,9 +305,7 @@
                                         (Nomor
                                         Induk Mahasiswa)</span> kamu.
                                     Tunggu sebentar ya, prosesnya sedang berjalan!
-                                    Siap-siap jadi bagian dari <span class="font-bold text-indigo-700">Universitas Bakti
-                                        Tunas
-                                        Husada</span> yang penuh semangat dan prestasi! 🚀
+                                    Siap-siap jadi bagian dari <span class="font-bold text-indigo-700">Institut Kesehatan Rajawali</span> yang penuh semangat dan prestasi! 🚀
                                 </p>
                                 <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
                                     class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
@@ -318,16 +316,14 @@
                                 class="w-32 drop-shadow-md animate-bounce-slow">
                             <div class="flex flex-col">
                                 <h2 class="text-lg font-bold text-indigo-700 mb-2">
-                                    🎉 Selamat! Kamu Resmi Menjadi Mahasiswa Universitas Bakti Tunas Husada!
+                                    🎉 Selamat! Kamu Resmi Menjadi Mahasiswa Institut Kesehatan Rajawali!
                                 </h2>
                                 <p class="text-gray-700 font-medium leading-relaxed">
                                     Perjuanganmu akhirnya membuahkan hasil! 🌟
                                     Kini kamu telah resmi bergabung sebagai <span
-                                        class="font-semibold text-indigo-600">mahasiswa UBTH</span>.
+                                        class="font-semibold text-indigo-600">mahasiswa IKes Rajawali</span>.
                                     Semoga perjalanan barumu penuh semangat, pengalaman berharga, dan prestasi gemilang.
-                                    Selamat datang di <span class="font-bold text-indigo-700">Keluarga Besar Universitas
-                                        Bakti
-                                        Tunas Husada</span>! 💙
+                                    Selamat datang di <span class="font-bold text-indigo-700">Keluarga Besar Institut Kesehatan Rajawali</span>! 💙
                                 </p>
                                 <a href="{{ $programOptions[0]->link_grup }}" target="_blank"
                                     class="bg-primary text-white py-2 px-3 my-3 rounded-md text-center">Gabung Grup</a>
@@ -342,10 +338,10 @@
                             </h2>
                             <p class="text-gray-700 font-medium leading-relaxed">
                                 Saatnya selangkah lebih dekat menuju impianmu di
-                                <span class="font-bold text-indigo-700">Universitas Bakti Tunas Husada!</span> 🎓
+                                <span class="font-bold text-indigo-700">Institut Kesehatan Rajawali!</span> 🎓
                                 pilih <span class="font-semibold text-indigo-600">Program Studi</span> kamu.
                                 Semakin cepat kamu memilih, semakin cepat kamu bisa jadi bagian dari keluarga besar <span
-                                    class="font-bold text-indigo-700">UBTH!</span> 🚀
+                                    class="font-bold text-indigo-700">IKes Rajawali!</span> 🚀
                             </p>
                         </div>
                     @endif

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('nim_sequences', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('departement_id')->constrained('departments')->cascadeOnDelete();
+            $table->foreignId('departement_id')->constrained('departements')->cascadeOnDelete();
             $table->string('year', 2); // 24
             $table->string('registration_path_code', 2); // 1
             $table->unsignedInteger('last_number')->default(0);

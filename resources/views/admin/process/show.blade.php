@@ -628,7 +628,7 @@
         </div>
     </div>
     <div id="tab5" class="tab-content hidden">
-        {{-- akun UBTH --}}
+        {{-- akun IKes Rajawali --}}
         @if ($exam)
             <div class="flex flex-col gap-3">
                 <h1 class="font-sora font-semibold text-gray-800">Program Pilihan :
@@ -744,7 +744,7 @@
         @endif
     </div>
     <div id="tab6" class="tab-content hidden">
-        {{-- akun UBTH --}}
+        {{-- akun IKes Rajawali --}}
         <div class="flex flex-col gap-3">
             <form action="{{ route('process.store') }}" id="myFormAkun" method="post"
                 class="outline outline-1 outline-gray-500 p-3 rounded-xl w-full md:w-1/2">

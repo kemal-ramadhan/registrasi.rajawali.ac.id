@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite(['resources/css/app.css', 'resources/js/app.js'])
-  <link rel="shortcut icon" href="{{ asset('assets/icons/bth.png') }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ asset('assets/icons/IKes.png') }}" type="image/x-icon">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <title>{{ $title }} | Penerimaan Mahasiswa Baru Universitas Bakti Tunas Husada</title>
+  <title>{{ $title }} | Penerimaan Mahasiswa Baru Institut Kesehatan Rajawali</title>
   <!-- SweetAlert2 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.css" rel="stylesheet">
 
@@ -42,7 +42,7 @@
   </script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1331395535059424&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
+  <!-- End MetaÂ PixelÂ CodeÂ -->
 
   <!-- Kampus -->
   <!-- Meta Pixel Code -->
@@ -110,9 +110,9 @@
                     <div class="flex justify-between items-center">
                         <!-- Sisi Kiri (Logo) -->
                         <div class="flex items-center gap-3">
-                            <img src="{{ asset('assets/icons/bth-logo.svg') }}" alt="ubth" style="width: 50px">
+                            <img src="{{ asset('assets/icons/IKes.png') }}" alt="IKes Rajawali" style="width: 50px">
                             <div class="flex flex-col">
-                                <h1 class="text-lg font-sora font-bold drop-shadow-[0_2px_2px_rgba(255,255,255,0.7)]">Universitas Bakti Tunas Husada</h1>
+                                <h1 class="text-lg font-sora font-bold drop-shadow-[0_2px_2px_rgba(255,255,255,0.7)]">Institut Kesehatan Rajawali</h1>
                                 <small class="font-sora font-semibold drop-shadow-[0_1px_1px_rgba(255,255,255,0.7)]"><i>Transforming New Generation</i></small>
                             </div>
                         </div>
